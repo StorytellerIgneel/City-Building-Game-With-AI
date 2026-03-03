@@ -1,0 +1,4 @@
+{"@t":"2026-01-20T09:53:02.4156981Z","@mt":"Now listening on: {address}","address":"http://localhost:5164","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime","MachineName":"TEOHWEIHONG","ProcessId":39428,"ThreadId":1}
+{"@t":"2026-01-20T09:53:02.4364528Z","@mt":"Application started. Press Ctrl+C to shut down.","SourceContext":"Microsoft.Hosting.Lifetime","MachineName":"TEOHWEIHONG","ProcessId":39428,"ThreadId":1}
+{"@t":"2026-01-20T09:53:02.4376964Z","@mt":"Hosting environment: {EnvName}","EnvName":"Development","SourceContext":"Microsoft.Hosting.Lifetime","MachineName":"TEOHWEIHONG","ProcessId":39428,"ThreadId":1}
+{"@t":"2026-01-20T09:53:02.4513131Z","@mt":"Content root path: {ContentRoot}","ContentRoot":"C:\\Users\\Teoh Wei Hong\\FYP\\GameWebAPI","SourceContext":"Microsoft.Hosting.Lifetime","MachineName":"TEOHWEIHONG","ProcessId":39428,"ThreadId":1}

@@ -1,0 +1,7 @@
+Hi! Thank you for downloading my start menu asset. 
+
+The animated portion is included as a sprite sheet. The words with and without sandy shadows are included on the beach-menu-assets png. Also included there is the frame. It is made to fit around a 64x64 pixel space, so it can also function as a portrait frame! 
+
+I made everything in aseprite, and my work is licensed under CC BY-NC 4.0, which means you can share and remix it with credit for noncommercial projects! :> It is intended for use in game development. 
+
+Thank you! 

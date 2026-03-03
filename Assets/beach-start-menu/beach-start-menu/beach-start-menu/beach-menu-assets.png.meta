@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: f7c769e3a051ea04b98b0fe50dedda45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6487261441175525221
+    second: beach-menu-assets_0
+  - first:
+      213: -2901304560427294117
+    second: beach-menu-assets_1
+  - first:
+      213: -7309152982636132090
+    second: beach-menu-assets_2
+  - first:
+      213: -5245711979882660461
+    second: beach-menu-assets_3
+  - first:
+      213: -8971123802685641857
+    second: beach-menu-assets_4
+  - first:
+      213: 8352517214390262487
+    second: beach-menu-assets_5
+  - first:
+      213: -7043071629092725682
+    second: beach-menu-assets_6
+  - first:
+      213: 8555809462040242786
+    second: beach-menu-assets_7
+  - first:
+      213: -1039505768882038247
+    second: beach-menu-assets_8
+  - first:
+      213: -6898625569180595939
+    second: beach-menu-assets_9
+  - first:
+      213: 2084112166685602046
+    second: beach-menu-assets_10
+  - first:
+      213: -3611876325992936762
+    second: beach-menu-assets_11
+  - first:
+      213: 3687853886686204119
+    second: beach-menu-assets_12
+  - first:
+      213: -224624433915264137
+    second: beach-menu-assets_13
+  - first:
+      213: -1653618509946963166
+    second: beach-menu-assets_14
+  - first:
+      213: -1375544672955029121
+    second: beach-menu-assets_15
+  - first:
+      213: -4403602330996354708
+    second: beach-menu-assets_16
+  - first:
+      213: -1662172723002008010
+    second: beach-menu-assets_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: beach-menu-assets_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 146
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5671b56e8e1670a50800000000000000
+      internalID: 6487261441175525221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 148
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52a282cfde7cb7d0800000000000000
+      internalID: -2901304560427294117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 148
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6098cfc761ca09a90800000000000000
+      internalID: -7309152982636132090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 148
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d351d4fbc7337b0800000000000000
+      internalID: -5245711979882660461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 148
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7beed8be6a208380800000000000000
+      internalID: -8971123802685641857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 148
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da1118272a1ae370800000000000000
+      internalID: 8352517214390262487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 130
+        width: 45
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4cdb4c4babf14e90800000000000000
+      internalID: -7043071629092725682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26aa5d600675cb670800000000000000
+      internalID: 8555809462040242786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 132
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a11dfb20fe291f0800000000000000
+      internalID: -1039505768882038247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 132
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19409668982340a0800000000000000
+      internalID: -6898625569180595939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_10
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 132
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef07d5739f04cec10800000000000000
+      internalID: 2084112166685602046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_11
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 132
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca4c883e9900edc0800000000000000
+      internalID: -3611876325992936762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_12
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 132
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d099732293ed2330800000000000000
+      internalID: 3687853886686204119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 114
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7738b987449f1ecf0800000000000000
+      internalID: -224624433915264137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 116
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bb998f9ba2d09e0800000000000000
+      internalID: -1653618509946963166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 116
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79a5db686519ece0800000000000000
+      internalID: -1375544672955029121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 116
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6151e0e20343e2c0800000000000000
+      internalID: -4403602330996354708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach-menu-assets_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 26
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e1f1a07b6cee8e0800000000000000
+      internalID: -1662172723002008010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      beach-menu-assets_0: 6487261441175525221
+      beach-menu-assets_1: -2901304560427294117
+      beach-menu-assets_10: 2084112166685602046
+      beach-menu-assets_11: -3611876325992936762
+      beach-menu-assets_12: 3687853886686204119
+      beach-menu-assets_13: -224624433915264137
+      beach-menu-assets_14: -1653618509946963166
+      beach-menu-assets_15: -1375544672955029121
+      beach-menu-assets_16: -4403602330996354708
+      beach-menu-assets_17: -1662172723002008010
+      beach-menu-assets_2: -7309152982636132090
+      beach-menu-assets_3: -5245711979882660461
+      beach-menu-assets_4: -8971123802685641857
+      beach-menu-assets_5: 8352517214390262487
+      beach-menu-assets_6: -7043071629092725682
+      beach-menu-assets_7: 8555809462040242786
+      beach-menu-assets_8: -1039505768882038247
+      beach-menu-assets_9: -6898625569180595939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
