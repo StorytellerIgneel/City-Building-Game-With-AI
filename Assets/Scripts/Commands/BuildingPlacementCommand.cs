@@ -22,10 +22,10 @@ public class BuildingPlacementCommand : ICommand
 
         if (placedBuilding != null)
         {
-            spawnedBuildingInstance = Object.Instantiate(
-                buildingDefinition.prefab, 
-                position, 
-                Quaternion.identity);
+            // spawnedBuildingInstance = Object.Instantiate(
+            //     buildingDefinition.prefab, 
+            //     position, 
+            //     Quaternion.identity);
             Debug.Log("Building placed!");
         }
         else
@@ -39,8 +39,13 @@ public class BuildingPlacementCommand : ICommand
     {
         if (placedBuilding != null)
         {
-            Object.Destroy(spawnedBuildingInstance);
+            // Object.Destroy(placedBuilding.Instance);
             buildingPlacementService.RemoveBuilding(placedBuilding);
         }
+    }
+
+    public BuildingData GetBuildingData()
+    {
+        return placedBuilding;
     }
 }

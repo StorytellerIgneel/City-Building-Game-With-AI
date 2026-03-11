@@ -1,9 +1,9 @@
-namespace MyGame
-{
-    public enum BuildingType
-    {
-        House,
-        Factory,
-        Farm
-    }
-}
+// namespace MyGame
+// {
+//     public enum BuildingType
+//     {
+//         House,
+//         Factory,
+//         Farm
+//     }
+// }

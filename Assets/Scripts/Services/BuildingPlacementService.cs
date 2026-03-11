@@ -4,11 +4,13 @@ public class BuildingPlacementService
 {
     private readonly GameData data;
     private readonly GoldService goldService;
+    private readonly GridService gridService;
 
-    public BuildingPlacementService(GameData data, GoldService goldService)
+    public BuildingPlacementService(GameData data, GoldService goldService, GridService gridService )
     {
         this.data = data;
         this.goldService = goldService;
+        this.gridService = gridService;
     }
 
     public bool CanPlaceBuilding(BuildingDefinition buildingDefinition)
@@ -20,8 +22,9 @@ public class BuildingPlacementService
     {
         int cost = buildingDefinition.cost;
 
-        if (!goldService.TrySpend(cost))
-            return null;
+        Logger.Log("Before snapping: " + position);
+        position = gridService.SnapToGrid(position);
+        Logger.Log("After snapping: " + position);
 
         BuildingData building = new BuildingData
         {
@@ -29,8 +32,17 @@ public class BuildingPlacementService
             Definition = buildingDefinition
         };
 
-        data.Buildings.Add(building);
-        return building;
+        if (gridService.CanPlaceBuilding(position, buildingDefinition))
+        {
+            if (!goldService.TrySpend(cost))
+                return null;
+            gridService.PlaceBuildingOnGrid(position, buildingDefinition);
+            data.Buildings.Add(building);
+            return building;
+        }
+
+        Logger.Log("Can't place building at " + position);
+        return null;
     }
 
     public bool RemoveBuilding(BuildingData building)

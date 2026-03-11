@@ -1,0 +1,20 @@
+sequenceDiagram
+    Player->>+InputManager: Click left mouse
+    InputManager->>+InputManager: GetMousePosition()
+    BuildingPlacementController-->>+InputManager: InputManager.Instance.OnConfirm += HandleConfirmBuilding;
+    InputManager-->>+BuildingPlacementController:  OnConfirm?.Invoke(mouseWorldPos) - HandleConfirmBuilding;
+    BuildingPlacementController->>+BuildingPlacementCommand: new BuildingPlacementCommand(placementService,currentBuildingDef, position);
+    BuildingPlacementCommand-->>+BuildingPlacementController: return instance
+    BuildingPlacementController->+CommandInvoker: commandInvoker.ExecuteCommand(command);
+    CommandInvoker->>+BuildingPlacementCommand: command.Execute()
+    BuildingPlacementCommand->>+BuildingPlacementService: buildingPlacementService.PlaceBuilding(buildingDefinition, position)
+    BuildingPlacementService->>+GoldService: goldService.TrySpend(cost)
+    GoldService-->>+BuildingPlacementService: boolean (Money Enough?)
+    BuildingPlacementService->>+BuildingData: new BuildingData(buildingDefinition, position)
+    BuildingData-->>+BuildingPlacementService: return instance
+    BuildingPlacementService->>+BuildingPlacementService: gameData.add(building)
+    BuildingPlacementService->>+BuildingPlacementCommand: return BuildingData
+    BuildingPlacementCommand->>+BuildingPlacementCommand: Instantiate Building
+    BuildingPlacementCommand-->>-BuildingPlacementController: Command Executed
+    BuildingPlacementController-->>-InputManager: Command Executed
+    InputManager-->>-Player: Command Executed

@@ -1,0 +1,11 @@
+sequenceDiagram
+    User->>+Button: Click Place Building Button
+    Button->>+BuildingPlacementController: StartPlacement (buildingDefinition, emptyGhost)
+    BuildingPlacementController->>+BuildingGhost: Instantiate(ghostPrefab)
+    BuildingGhost->>+BuildingGhost: Create Instance
+    BuildingGhost-->>-BuildingPlacementController: return instance
+    BuildingPlacementController->>GhostPrefab: Initialize(buildingDefinition)
+    Note right of BuildingPlacementController: Ghost is created and follows cursor
+    deactivate BuildingPlacementController
+    BuildingPlacementController-->>Button:
+    Button-->>-User: Placement Started
