@@ -12,7 +12,7 @@ public static class Logger
     {
         // Get calling method info
         var stackFrame = new StackTrace(true).GetFrame(1); // 1 = caller
-        string fileName = stackFrame.GetFileName() ?? "UnknownFile";
+        string fileName = Path.GetFileNameWithoutExtension(stackFrame.GetFileName() ?? "UnknownFile");
         int lineNumber = stackFrame.GetFileLineNumber();
         string methodName = stackFrame.GetMethod().Name;
 

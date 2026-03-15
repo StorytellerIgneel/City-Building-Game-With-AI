@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class GameGrid
 {
-    private PointType[,] _grid;
+    private GridCell[,] _grid;
     private int _width;
     public int Width { get { return _width; } }
     private int _height;
@@ -18,11 +18,19 @@ public class GameGrid
     {
         _width = width;
         _height = height;
-        _grid = new PointType[width, height];
+        _grid = new GridCell[width, height];
+
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                _grid[x, y] = new GridCell();
+            }
+        }
     }
 
     // Adding index operator to our Grid class so that we can use grid[][] to access specific cell from our grid. 
-    public PointType this[int i, int j]
+    public GridCell this[int i, int j]
     {
         get
         {
@@ -30,22 +38,22 @@ public class GameGrid
         }
         set
         {
-            if (value == PointType.Road)
-            {
-                _roadList.Add(new Point(i, j));
-            }
-            else
-            {
-                _roadList.Remove(new Point(i, j));
-            }
-            if (value == PointType.SpecialBuilding)
-            {
-                _specialStructure.Add(new Point(i, j));
-            }
-            else
-            {
-                _specialStructure.Remove(new Point(i, j));
-            }
+            // if (value == PointType.Road)
+            // {
+            //     _roadList.Add(new Point(i, j));
+            // }
+            // else
+            // {
+            //     _roadList.Remove(new Point(i, j));
+            // }
+            // if (value == PointType.SpecialBuilding)
+            // {
+            //     _specialStructure.Add(new Point(i, j));
+            // }
+            // else
+            // {
+            //     _specialStructure.Remove(new Point(i, j));
+            // }
             _grid[i, j] = value;
         }
     }
@@ -71,10 +79,10 @@ public class GameGrid
     //     return _roadList[rand.Next(0, _roadList.Count - 1)];
     // }
 
-    public List<Point> GetAdjacentCells(Point cell, bool isAgent)
-    {
-        return GetWakableAdjacentCells((int)cell.X, (int)cell.Y, isAgent);
-    }
+    // public List<Point> GetAdjacentCells(Point cell, bool isAgent)
+    // {
+    //     return GetWakableAdjacentCells((int)cell.X, (int)cell.Y, isAgent);
+    // }
 
     public float GetCostOfEnteringCell(Point cell)
     {
@@ -103,63 +111,63 @@ public class GameGrid
         return adjacentCells;
     }
 
-    public List<Point> GetWakableAdjacentCells(int x, int y, bool isAgent)
-    {
-        List<Point> adjacentCells = GetAllAdjacentCells(x, y);
-        for (int i = adjacentCells.Count - 1; i >= 0; i--)
-        {
-            if(IsCellWakable(_grid[adjacentCells[i].X, adjacentCells[i].Y], isAgent)==false)
-            {
-                adjacentCells.RemoveAt(i);
-            }
-        }
-        return adjacentCells;
-    }
+    // public List<Point> GetWakableAdjacentCells(int x, int y, bool isAgent)
+    // {
+    //     List<Point> adjacentCells = GetAllAdjacentCells(x, y);
+    //     for (int i = adjacentCells.Count - 1; i >= 0; i--)
+    //     {
+    //         if(IsCellWakable(_grid[adjacentCells[i].X, adjacentCells[i].Y], isAgent)==false)
+    //         {
+    //             adjacentCells.RemoveAt(i);
+    //         }
+    //     }
+    //     return adjacentCells;
+    // }
 
-    public List<Point> GetAdjacentCellsOfType(int x, int y, PointType type)
-    {
-        List<Point> adjacentCells = GetAllAdjacentCells(x, y);
-        for (int i = adjacentCells.Count - 1; i >= 0; i--)
-        {
-            if (_grid[adjacentCells[i].X, adjacentCells[i].Y] != type)
-            {
-                adjacentCells.RemoveAt(i);
-            }
-        }
-        return adjacentCells;
-    }
+    // public List<Point> GetAdjacentCellsOfType(int x, int y, PointType type)
+    // {
+    //     List<Point> adjacentCells = GetAllAdjacentCells(x, y);
+    //     for (int i = adjacentCells.Count - 1; i >= 0; i--)
+    //     {
+    //         if (_grid[adjacentCells[i].X, adjacentCells[i].Y] != type)
+    //         {
+    //             adjacentCells.RemoveAt(i);
+    //         }
+    //     }
+    //     return adjacentCells;
+    // }
 
-    /// <summary>
-    /// Returns array [Left neighbour, Top neighbour, Right neighbour, Down neighbour]
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <returns></returns>
-    public PointType[] GetAllAdjacentPointTypes(int x, int y)
-    {
-        PointType[] neighbours = { PointType.None, PointType.None, PointType.None, PointType.None };
-        if (x > 0)
-        {
-            neighbours[0] = _grid[x - 1, y];
-        }
-        if (x < _width - 1)
-        {
-            neighbours[2] = _grid[x + 1, y];
-        }
-        if (y > 0)
-        {
-            neighbours[3] = _grid[x, y - 1];
-        }
-        if (y < _height - 1)
-        {
-            neighbours[1] = _grid[x, y + 1];
-        }
-        return neighbours;
-    }
+    // / <summary>
+    // / Returns array [Left neighbour, Top neighbour, Right neighbour, Down neighbour]
+    // / </summary>
+    // / <param name="x"></param>
+    // / <param name="y"></param>
+    // / <returns></returns>
+    // public PointType[] GetAllAdjacentPointTypes(int x, int y)
+    // {
+    //     PointType[] neighbours = { PointType.None, PointType.None, PointType.None, PointType.None };
+    //     if (x > 0)
+    //     {
+    //         neighbours[0] = _grid[x - 1, y];
+    //     }
+    //     if (x < _width - 1)
+    //     {
+    //         neighbours[2] = _grid[x + 1, y];
+    //     }
+    //     if (y > 0)
+    //     {
+    //         neighbours[3] = _grid[x, y - 1];
+    //     }
+    //     if (y < _height - 1)
+    //     {
+    //         neighbours[1] = _grid[x, y + 1];
+    //     }
+    //     return neighbours;
+    // }
 
     public bool IsCellOccupied(Point point)
     {
-        return _grid[point.X, point.Y] != PointType.Empty;
+        return _grid[point.X, point.Y].Type != PointType.Empty;
     }
 
     public override string ToString()
@@ -170,13 +178,15 @@ public class GameGrid
         {
             for (int x = 0; x < _width; x++)
             {
-                char c = _grid[x, y] switch
+                char c = _grid[x, y].Type switch
                 {
                     PointType.Empty => 'E',
                     PointType.Road => 'R',
-                    PointType.SpecialBuilding => 'S',
+                    PointType.House => 'H',
+                    PointType.Factory => 'F',
+                    PointType.Service => 'S',
+                    PointType.SpecialBuilding => 'B',
                     PointType.None => 'N',
-                    PointType.Building => 'B',
                     _ => '?'
                 };
 

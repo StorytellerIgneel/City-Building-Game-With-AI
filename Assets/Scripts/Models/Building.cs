@@ -4,12 +4,11 @@ using System.Collections;
 public class Building : MonoBehaviour
 {
     private BuildingDefinition buildingDefinition;
-    private GameContext gameContext;
+    private BuildingData buildingData;
 
-    public void Initialize(BuildingDefinition definition, GameContext context)
-    {
+    public void Initialize(BuildingDefinition definition, BuildingData data){
         buildingDefinition = definition;
-        gameContext = context;
+        buildingData = data;
     }
 
     void Start()
@@ -45,6 +44,4 @@ public class Building : MonoBehaviour
             }
         }
     }
-
-    public PopulationController PopulationController => gameContext.PopulationController;
 }

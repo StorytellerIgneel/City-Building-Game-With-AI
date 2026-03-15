@@ -2,7 +2,9 @@ public enum PointType
 {
     Empty,
     Road,
-    Building,
+    House,
+    Factory,
+    Service,
     SpecialBuilding,
     None
 }

@@ -15,10 +15,12 @@ MonoBehaviour:
   buildingType: 1
   id: 2
   cost: 80
+  basePopulation: 2
   prefab: {fileID: 2935390130111506773, guid: c0e2cb4bb4aa8d142b86538c376def51, type: 3}
   ghostSprite: {fileID: 0}
   width: 6
   height: 6
+  effectRadius: 2
   onPlacedActions:
   - {fileID: 11400000, guid: 6666e94e9a4e8ff4486b27eff06fd311, type: 2}
   onRemovedActions: []

@@ -45,14 +45,17 @@ Material:
     - _Glossiness: 0.5
     - _GridSize: 1
     - _HighlightRadius: 5
-    - _LineThickness: 0.0001
+    - _LineThickness: 0.08
     - _Metallic: 0
+    - _RectBorder: 0.05
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.93207544, g: 0.40624416, b: 0.40624416, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _LineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MousePos: {r: -12.21875, g: 23.41875, b: 0, a: 0}
+    - _MousePos: {r: 8.081249, g: 5.918749, b: 0, a: 0}
+    - _RectColor: {r: 1, g: 0, b: 0, a: 0.2}
+    - _RectExtension: {r: 2, g: 2, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

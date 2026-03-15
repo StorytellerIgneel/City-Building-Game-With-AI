@@ -7,18 +7,23 @@ public class BuildingPlacementCommand : ICommand
     private BuildingDefinition buildingDefinition;
     private Vector3 position;
     private BuildingData placedBuilding;
-    private GameObject spawnedBuildingInstance;
+    //private GameObject spawnedBuildingInstance;
 
-    public BuildingPlacementCommand(BuildingPlacementService buildingPlacementService, BuildingDefinition buildingDefinition, Vector3 position)
+    private BuildingRegistry buildingRegistry; // to add new buildings into the registry
+    
+
+    public BuildingPlacementCommand(BuildingPlacementService buildingPlacementService, BuildingDefinition buildingDefinition, 
+        Vector3 position, BuildingRegistry buildingRegistry)
     {
         this.buildingPlacementService = buildingPlacementService;
         this.buildingDefinition = buildingDefinition;
         this.position = position;
+        this.buildingRegistry = buildingRegistry;
     }
 
     public void Execute()
     {
-        placedBuilding = buildingPlacementService.PlaceBuilding(buildingDefinition, position);
+        placedBuilding = buildingPlacementService.PlaceBuilding(buildingDefinition, position, buildingRegistry);
 
         if (placedBuilding != null)
         {

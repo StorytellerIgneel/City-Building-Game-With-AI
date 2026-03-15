@@ -32,4 +32,9 @@ public readonly struct Point : IEquatable<Point>
             return hash;
         }
     }
+
+    public override string ToString()
+    {
+        return $"({X}, {Y})";
+    }
 }
