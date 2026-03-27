@@ -3,6 +3,7 @@ using UnityEngine;
 public class GridController : MonoBehaviour
 {
     public Material gridMaterial;
+    private GameObject gridOverlay;
     public Vector4 rectHighlightRadius {set;get;}
 
     private void Start()
@@ -19,9 +20,11 @@ public class GridController : MonoBehaviour
         }
     }
 
-    public void Initialize(Material material)
+    // TODO: clean this
+    public void Initialize(Material material, GameObject gridOverlay)
     {
-        this.gridMaterial = material;
+        this.gridOverlay = gridOverlay;
+        gridMaterial = material;
     }
 
     public void HandleMouseMove(Vector3 mousePos)
@@ -29,5 +32,13 @@ public class GridController : MonoBehaviour
         gridMaterial.SetVector("_MousePos", new Vector4(mousePos.x, mousePos.y+1, 0, 0)); //+1 to be closer to the ghost
     }
 
+    public void SetGridOverlayActive()
+    {
+        gridOverlay.SetActive(true);
+    }
 
+    public void SetGridOverlayInactive()
+    {
+        gridOverlay.SetActive(false);
+    }
 }

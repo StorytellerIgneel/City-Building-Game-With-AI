@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 using MyGame;
+using Unity.Entities.UniversalDelegates;
 
 
 public class PopulationService
@@ -9,13 +11,14 @@ public class PopulationService
     public int BonusPopulation { get; private set; } = 0; // population from modifiers, events, etc. that can be added on top of base population
     public int TotalPopulation => BasePopulation + BonusPopulation;  //single source of truth for population count, can be used for UI display and other logic
     private BuildingRegistry buildingRegistry;
-
+   public event Action<ResourceType, int> OnResourceChanged; 
 
     public PopulationService(BuildingRegistry buildingRegistry)
     {
         this.buildingRegistry = buildingRegistry;
     }
 
+    // for event driven, no use for now
     public void OnUpdate()
     {
         Logger.Log("PopulationService: OnUpdate");
@@ -29,12 +32,15 @@ public class PopulationService
     public void RecalculatePopulation()
     {
         int total = 0;
-        foreach (BuildingData building in buildingRegistry.AllBuildings)
+        List <BuildingData> allBuildings = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.All);
+        foreach (BuildingData building in allBuildings)
         {
+
             if (building.Definition.buildingType == BuildingType.House)
             {
-                float multiplier = 1f - building.pollutionIndex; // reduce population based on pollution index, e.g. 0.20 pollution reduces population by 20%
-                total += Mathf.RoundToInt(building.Definition.basePopulation * multiplier);
+                // todo: check formula 
+                float multiplier = 1f - building.pollutionIndex + building.serviceIndex; // reduce population based on pollution index, e.g. 0.20 pollution reduces population by 20%
+                total += Mathf.RoundToInt(building.GetEffectivePopulation() * multiplier);
             }
             else
             {
@@ -42,5 +48,6 @@ public class PopulationService
             }
         }
         BasePopulation = total;
+        OnResourceChanged?.Invoke(ResourceType.Population, TotalPopulation);
     }
 }

@@ -14,7 +14,8 @@ public class Building : MonoBehaviour
     void Start()
     {
         // On place actions
-        if (buildingDefinition.onPlacedActions != null)
+        // check buildDef not null for special buildings (which may not have a definition) to avoid null ref, and also check if there are any actions to execute
+        if (buildingDefinition != null && buildingDefinition.onPlacedActions != null)
         {
             foreach (var action in buildingDefinition.onPlacedActions)
             {
@@ -25,7 +26,7 @@ public class Building : MonoBehaviour
 
     public void OnTurnStart()
     {
-        if (buildingDefinition.onTurnStartActions != null)
+        if (buildingDefinition != null && buildingDefinition.onTurnStartActions != null)
         {
             foreach (var action in buildingDefinition.onTurnStartActions)
             {
@@ -36,7 +37,7 @@ public class Building : MonoBehaviour
 
     public void OnRemoved()
     {
-        if (buildingDefinition.onRemovedActions != null)
+        if (buildingDefinition != null && buildingDefinition.onRemovedActions != null)
         {
             foreach (var action in buildingDefinition.onRemovedActions)
             {

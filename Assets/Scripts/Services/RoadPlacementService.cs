@@ -12,28 +12,41 @@ public class RoadPlacementService
     {
         this.gridService = gridService;
         this.goldService = goldService;
+        // this.actionPointService = actionPointService;
     }
-    
-    public bool PlaceRoad(List<Point> roadPoints)
+
+    // return null if placement fails, otherwise return the list of RoadData that were placed (for assigning gameob)
+    public List<RoadData> PlaceRoad(List<Point> roadPoints, BuildingRegistry buildingRegistry)
     {
-        if(!gridService.CanPlacePoints(roadPoints))
+        if (roadPoints == null || roadPoints.Count == 0)        {
+            Logger.LogError("No road points provided for placement!");
+            return null;
+        }
+        if (!gridService.CanPlacePoints(roadPoints))
         {
             Logger.Log("Can't place road at " + roadPoints[0]);
-            return false;
+            return null;
         }
         if (!goldService.TrySpend(roadCost * roadPoints.Count))
         {
             Logger.Log("Not enough gold to place road!");
             Logger.Log($"Road cost: {roadCost * roadPoints.Count}, Current gold: {goldService.CurrentGold}");
-            return false;
+            return null;
         }
-        if(!gridService.RegisterPointsOnGrid(roadPoints, PointType.Road))
+        if (!gridService.RegisterPointsOnGrid(roadPoints, PointType.Road))
         {
-            goldService.Add(roadCost * roadPoints.Count); // Refund gold if placement fails
+            goldService.AddGold(roadCost * roadPoints.Count); // Refund gold if placement fails
             Logger.LogError("Failed to place road on grid!");
-            return false;
+            return null;
         }
-        return true; // valid and successfully placed
+        List <RoadData> placedRoads = new List<RoadData>();
+        foreach (Point p in roadPoints)
+        {
+            RoadData roadData = new RoadData(p);
+            buildingRegistry.Register(roadData);
+            placedRoads.Add(roadData);
+        }
+        return placedRoads; // valid and successfully placed
     }
 
     public static List<Point> GenerateLShapePoints(Point start, Point end)
@@ -43,7 +56,7 @@ public class RoadPlacementService
         Point corner = new Point(end.X, start.Y); // horizontal first
 
         AddStraightLine(points, start, corner);
-        AddStraightLine(points, corner, end, skipFirst: true); 
+        AddStraightLine(points, corner, end, skipFirst: true);
         // skipFirst avoids adding the corner twice
 
         return points;

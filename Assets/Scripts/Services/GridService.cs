@@ -5,11 +5,14 @@ public class GridService
 {
     private GameGrid grid;
     private readonly float cellSize = 1f;
+    private GridOccupancyVisual gridOccupancyVisual;
+    private List<Point> occupiedPoints = new List<Point>();
 
-    public GridService(GameGrid grid, float cellSize = 1f)
+    public GridService(GameGrid grid, GridOccupancyVisual gridOccupancyVisual, float cellSize = 1f)
     {
         this.grid = grid;
         this.cellSize = cellSize;
+        this.gridOccupancyVisual = gridOccupancyVisual;
     }
 
     //Position snapper
@@ -17,39 +20,22 @@ public class GridService
     {
         Vector3 gridPosition = position / cellSize;
         gridPosition = new Vector3(Mathf.Round(gridPosition.x), Mathf.Round(gridPosition.y), Mathf.Round(gridPosition.z));
+        //Logger.Log($"Snapped position {position} to grid: {gridPosition}");
+
         return gridPosition * cellSize;
     }
 
-    // public bool PlaceBuildingOnGrid(Vector3 cursorPosition, BuildingDefinition buildingDefinition, BuildingData buildingData)
-    // {
-    //     int width = buildingDefinition.width;
-    //     int height = buildingDefinition.height;
-    //     // the cursor is at the bottom center, so need to offset by half the building size
-    //     // assume the building is a rectangle for simplicity, and the size is defined in the building definition
-    //     int startX = (int)(cursorPosition.x - width / 2);
-    //     int startY = (int)(cursorPosition.y);
+    public Vector3 GridToWorld(Point position)
+    {
+        return new Vector3(position.X, position.Y, 0f) + new Vector3(0f, -0.5f, 0f) * cellSize;
+    }
 
-    //     Logger.Log($"Placing building at ({startX}, {startY}) with size ({width}, {height})");
-
-    //     List <Point> buildingPoints = new List<Point>();
-
-    //     for (int x = 0; x < width; x++)
-    //     {
-    //         for (int y = 0; y < height; y++)
-    //         {
-    //             int gx = startX + x;
-    //             int gy = startY + y;
-
-    //             grid[gx, gy].Type = buildingDefinition.GetPointType();
-    //             grid[gx, gy].buildingData = buildingData;
-    //         }
-    //     }
-
-    //     Logger.Log("Grid: \n" + grid.ToString());
-
-    //     // Additional logic to check if the grid cell is occupied can be added here
-    //     return true;
-    // }
+    public Point WorldToGrid(Vector3 worldPos)
+    {
+        int x = Mathf.FloorToInt(worldPos.x);
+        int y = Mathf.FloorToInt(worldPos.y);
+        return new Point(x, y);
+    }
 
     public bool RegisterPointsOnGrid(List<Point> points, PointType pointType, BuildingData buildingData = null)
     {
@@ -68,9 +54,28 @@ public class GridService
             {
                 grid[p.X, p.Y].buildingData = buildingData;
             }
+            occupiedPoints.Add(p);
         }
+        gridOccupancyVisual.UpdateOccupiedCells(occupiedPoints);
 
         Logger.Log("Grid: \n" + grid.ToString());
+        return true;
+    }
+
+    public bool UnregisterPointsOnGrid(List<Point> points)
+    {
+        if (CanPlacePoints(points))
+        {
+            Logger.LogWarning("Trying to unregister points that are not occupied: " + string.Join(", ", points));
+            return false;
+        }
+        foreach (Point p in points)
+        {
+            grid[p.X, p.Y].Type = PointType.Empty;
+            grid[p.X, p.Y].buildingData = null;
+            occupiedPoints.Remove(p);
+        }
+        gridOccupancyVisual.UpdateOccupiedCells(occupiedPoints);
         return true;
     }
 
@@ -102,10 +107,11 @@ public class GridService
             point.Y >= 0 && point.Y < grid.Height;
     }
 
+    //todo bug here - placed 2 but only 1 is registered as in radius, likely due to the way the radius is calculated, needs testing and fixing
     public List<BuildingData> GetBuildingsInRadius(Point origin, int radius, int sourceWidth, int sourceHeight)
     {
         HashSet<BuildingData> buildingsInRadius = new HashSet<BuildingData>();
-        
+
         foreach(Point point in GetPointsAroundRect(origin, sourceWidth, sourceHeight, radius))
         {
             BuildingData building = grid[point.X, point.Y].buildingData;
@@ -113,14 +119,17 @@ public class GridService
             if (building == null)
                 continue;
 
+            Logger.Log($"Found building in radius: {building.Origin.X}, {building.Origin.Y} at point {point.X}, {point.Y}");
+
             buildingsInRadius.Add(building);
         }
         Logger.Log($"Found {buildingsInRadius.Count} buildings in radius around ({origin.X}, {origin.Y}) with radius {radius}");
 
         return new List<BuildingData>(buildingsInRadius);
     }
-
-    public bool HasRoadInRadius(Point origin, int radius, int sourceWidth, int sourceHeight)
+    
+    // todo: remove the corner grid as it feels connected through the corner grid 
+    public bool HasRoadInRadius(Point origin, int sourceWidth, int sourceHeight, int radius = 1)
     {
         foreach (Point point in GetPointsAroundRect(origin, sourceWidth, sourceHeight, radius))
         {
@@ -164,5 +173,16 @@ public class GridService
         }
 
         return points;
+    }
+
+    public GridCell GetGridCell(Point point)
+    {
+        if (!IsWithinBounds(point))
+        {
+            Logger.LogError($"Point out of bounds: {point}");
+            return null;
+        }
+
+        return grid[point.X, point.Y];
     }
 }

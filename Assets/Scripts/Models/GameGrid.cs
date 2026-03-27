@@ -185,7 +185,7 @@ public class GameGrid
                     PointType.House => 'H',
                     PointType.Factory => 'F',
                     PointType.Service => 'S',
-                    PointType.SpecialBuilding => 'B',
+                    PointType.Special => 'B',
                     PointType.None => 'N',
                     _ => '?'
                 };

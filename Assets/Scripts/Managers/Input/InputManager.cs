@@ -9,6 +9,8 @@ public class InputManager : MonoBehaviour
     public event Action<Vector3> OnCancel;
     public event Action<Vector3> OnMouseMove;
     public event Action<Vector2> OnCameraMove;
+    public event Action<Vector3> OnUpgrade;
+    public event Action<Vector3> OnDemolish;
 
     private GameInputActions inputActions;
     
@@ -36,6 +38,8 @@ public class InputManager : MonoBehaviour
         inputActions.Player.MoveMouse.performed += HandleMouseMove;
         inputActions.Player.MoveCamera.performed += HandleCameraMove;
         inputActions.Player.MoveCamera.canceled += HandleCameraMove; // Stop cam movement when input is released
+        inputActions.Player.Upgrade.performed += HandleUpgrade;
+        inputActions.Player.Demolish.performed += HandleDemolish;
     }
 
     private void OnDisable()
@@ -68,6 +72,16 @@ public class InputManager : MonoBehaviour
     {
         Vector2 input = context.ReadValue<Vector2>(); // Already combined WASD vector
         OnCameraMove?.Invoke(input);
+    }
+
+    private void HandleUpgrade(InputAction.CallbackContext context)
+    {
+        OnUpgrade?.Invoke(GetMousePosition());
+    }
+
+    private void HandleDemolish(InputAction.CallbackContext context)
+    {
+        OnDemolish?.Invoke(GetMousePosition());
     }
 
     private Vector3 GetMousePosition()

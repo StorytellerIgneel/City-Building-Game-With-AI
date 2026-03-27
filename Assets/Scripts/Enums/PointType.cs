@@ -5,6 +5,6 @@ public enum PointType
     House,
     Factory,
     Service,
-    SpecialBuilding,
+    Special,
     None
 }

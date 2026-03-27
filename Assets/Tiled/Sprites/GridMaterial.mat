@@ -39,21 +39,30 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OccupancyTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AxisThickness: 0.02
     - _EnableExternalAlpha: 0
     - _Glossiness: 0.5
+    - _GridHeight: 40
     - _GridSize: 1
+    - _GridWidth: 40
     - _HighlightRadius: 5
     - _LineThickness: 0.08
     - _Metallic: 0
     - _RectBorder: 0.05
     - _ZWrite: 0
     m_Colors:
+    - _AxisColor: {r: 1, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 0.93207544, g: 0.40624416, b: 0.40624416, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _GridOrigin: {r: 0, g: 0, b: 0, a: 0}
     - _LineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MousePos: {r: 8.081249, g: 5.918749, b: 0, a: 0}
+    - _MousePos: {r: 19.92025, g: 7.281249, b: 0, a: 0}
     - _RectColor: {r: 1, g: 0, b: 0, a: 0.2}
     - _RectExtension: {r: 2, g: 2, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

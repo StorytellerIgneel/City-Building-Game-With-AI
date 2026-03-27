@@ -5,7 +5,7 @@ public class BuildButton : MonoBehaviour
     [SerializeField] private BuildingDefinition buildingDefinition;
 
     [SerializeField] private BuildingPlacementController placementController;
-    [SerializeField] private BuildingGhost emptyGhost;
+    [SerializeField] private PlacementPreview emptyGhost;
 
     public void OnClick()
     {

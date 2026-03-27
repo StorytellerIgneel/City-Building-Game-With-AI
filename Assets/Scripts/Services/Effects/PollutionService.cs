@@ -15,18 +15,20 @@ public class PollutionService
 
     public void UpdatePollution()
     {
-        // Debugging only
+        // Todo: Debugging only
         float pollutionRate = 0.20f;
         // reset all pollution index before recalc
-        foreach (BuildingData house in buildingRegistry.Houses)
+        List<BuildingData> allHouses = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.House);
+        List<BuildingData> allFactories = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.Factory);
+        foreach (BuildingData house in allHouses)
         {
             house.pollutionIndex = 0; 
         }
-        foreach (BuildingData factory in buildingRegistry.Factories)
+        foreach (BuildingData factory in allFactories)
         {
             List<BuildingData> surroundingHouses = gridService.GetBuildingsInRadius(
                 factory.Origin, 
-                factory.Definition.effectRadius, 
+                factory.GetEffectivePollution(), 
                 factory.Definition.width, 
                 factory.Definition.height);
             foreach (BuildingData house in surroundingHouses)

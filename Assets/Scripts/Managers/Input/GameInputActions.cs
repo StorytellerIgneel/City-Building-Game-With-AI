@@ -62,6 +62,24 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Upgrade"",
+                    ""type"": ""Button"",
+                    ""id"": ""3cda692d-b9a2-4b7f-a389-573f437da83a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Demolish"",
+                    ""type"": ""Button"",
+                    ""id"": ""2aa68f1a-5352-479b-ab0f-a3adbe3de5ab"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,6 +170,28 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""MoveCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0b5652e0-4391-43f2-8b9e-f299e46cb4ec"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Upgrade"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e8da1c78-13b4-441f-907f-f4805154935f"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Demolish"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -164,6 +204,8 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         m_Player_Cancel = m_Player.FindAction("Cancel", throwIfNotFound: true);
         m_Player_MoveMouse = m_Player.FindAction("MoveMouse", throwIfNotFound: true);
         m_Player_MoveCamera = m_Player.FindAction("MoveCamera", throwIfNotFound: true);
+        m_Player_Upgrade = m_Player.FindAction("Upgrade", throwIfNotFound: true);
+        m_Player_Demolish = m_Player.FindAction("Demolish", throwIfNotFound: true);
     }
 
     ~@GameInputActions()
@@ -234,6 +276,8 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Cancel;
     private readonly InputAction m_Player_MoveMouse;
     private readonly InputAction m_Player_MoveCamera;
+    private readonly InputAction m_Player_Upgrade;
+    private readonly InputAction m_Player_Demolish;
     public struct PlayerActions
     {
         private @GameInputActions m_Wrapper;
@@ -242,6 +286,8 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         public InputAction @Cancel => m_Wrapper.m_Player_Cancel;
         public InputAction @MoveMouse => m_Wrapper.m_Player_MoveMouse;
         public InputAction @MoveCamera => m_Wrapper.m_Player_MoveCamera;
+        public InputAction @Upgrade => m_Wrapper.m_Player_Upgrade;
+        public InputAction @Demolish => m_Wrapper.m_Player_Demolish;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -263,6 +309,12 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             @MoveCamera.started += instance.OnMoveCamera;
             @MoveCamera.performed += instance.OnMoveCamera;
             @MoveCamera.canceled += instance.OnMoveCamera;
+            @Upgrade.started += instance.OnUpgrade;
+            @Upgrade.performed += instance.OnUpgrade;
+            @Upgrade.canceled += instance.OnUpgrade;
+            @Demolish.started += instance.OnDemolish;
+            @Demolish.performed += instance.OnDemolish;
+            @Demolish.canceled += instance.OnDemolish;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -279,6 +331,12 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             @MoveCamera.started -= instance.OnMoveCamera;
             @MoveCamera.performed -= instance.OnMoveCamera;
             @MoveCamera.canceled -= instance.OnMoveCamera;
+            @Upgrade.started -= instance.OnUpgrade;
+            @Upgrade.performed -= instance.OnUpgrade;
+            @Upgrade.canceled -= instance.OnUpgrade;
+            @Demolish.started -= instance.OnDemolish;
+            @Demolish.performed -= instance.OnDemolish;
+            @Demolish.canceled -= instance.OnDemolish;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -302,5 +360,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         void OnCancel(InputAction.CallbackContext context);
         void OnMoveMouse(InputAction.CallbackContext context);
         void OnMoveCamera(InputAction.CallbackContext context);
+        void OnUpgrade(InputAction.CallbackContext context);
+        void OnDemolish(InputAction.CallbackContext context);
     }
 }
