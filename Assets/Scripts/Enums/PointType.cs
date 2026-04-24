@@ -2,9 +2,11 @@ public enum PointType
 {
     Empty,
     Road,
-    House,
+    SmallHouse,
+    BigHouse,
     Factory,
     Service,
+    Supply,
     Special,
     None
 }

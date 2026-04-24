@@ -2,6 +2,7 @@ public class ObjectiveState
 {
     public ObjectiveDefinition objectiveDefinition { get; }
     public float CurrentValue { get; private set; }
+    public float turnMaintained { get; private set; } // for continuous objectives
     public bool IsCompleted { get; private set; }
     public bool RewardClaimmed { get; private set; }
 
@@ -16,14 +17,17 @@ public class ObjectiveState
     public void SetProgress (float progress)
     {
         CurrentValue = progress;
-        if (CurrentValue >= objectiveDefinition.targetValue)
+        if (((objectiveDefinition.ObjectiveType != ObjectiveType.KeepPollutionBelow) && (CurrentValue >= objectiveDefinition.targetValue))
+        || ((objectiveDefinition.ObjectiveType == ObjectiveType.KeepPollutionBelow) && ((CurrentValue / 100) <= objectiveDefinition.targetValue)))
         {
+            turnMaintained += 1;
             IsCompleted = true;
         }
         else{ 
             // reset the achieved status to none if the progress 
             // is less than the target value (even after being completed)
             IsCompleted = false;
+            turnMaintained = 0;
         }
     }
 

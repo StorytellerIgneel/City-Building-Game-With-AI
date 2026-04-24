@@ -3,9 +3,12 @@ namespace MyGame
     public enum BuildingType
     {
         All,
-        House,
+        AllHouse,
+        SmallHouse,
+        BigHouse,
         Factory,
         Service,
+        Supply,
         Special
     }
 }

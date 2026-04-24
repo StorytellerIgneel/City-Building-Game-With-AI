@@ -122,6 +122,14 @@ public class BuildingPlacementService
             analyticsService.OnActionLog(PlayerActionType.Upgrade, buildingData, true, "Upgrade failed - already at max level");
             return;
         }
+
+        if (!goldService.TrySpend(buildingData.Definition.upgradeCost))
+        {
+            Logger.Log("Not enough gold to upgrade building!");
+            analyticsService.OnActionLog(PlayerActionType.Upgrade, buildingData, false, "Not enough gold");
+            return;
+        }
+
         Logger.Log($"Upgrading building at {buildingData.Origin}");
         buildingData.Upgrade();
         analyticsService.OnActionLog(PlayerActionType.Upgrade, buildingData, true);

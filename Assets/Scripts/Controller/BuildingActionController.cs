@@ -1,4 +1,6 @@
+using MyGame;
 using UnityEngine;
+using System;
 
 public class BuildingActionController : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class BuildingActionController : MonoBehaviour
     private PlacementModeService placementModeService;
     private ActionPointService actionPointService;
 
+    public event Action<BuildingType, int, float> OnBuildingSelected;
+    public event Action OnBuildingDeselected;
+    
     public void Initialize(BuildingPlacementService service, GridService gridService, 
         PlacementModeService placementModeService, ActionPointService actionPointService)
     {
@@ -63,6 +68,7 @@ public class BuildingActionController : MonoBehaviour
             return;
         }
         Destroy(demolishedBuilding.BuildingObject); // Destroy the building GameObject in the scene
+        OnBuildingDeselected?.Invoke();
         ClearSelection();
     }
 
@@ -86,6 +92,7 @@ public class BuildingActionController : MonoBehaviour
             return;
         }
         selectedBuilding = buildingData;
+        OnBuildingSelected?.Invoke(selectedBuilding.Definition.buildingType, selectedBuilding.Level, selectedBuilding.satisfactionIndex);
 
         Logger.Log("Selected building at " + selectedBuilding.Origin);
     }
@@ -98,6 +105,7 @@ public class BuildingActionController : MonoBehaviour
             return;
         }
         ClearSelection();
+        OnBuildingDeselected?.Invoke();
         Logger.Log("Deselected building");
     }
 

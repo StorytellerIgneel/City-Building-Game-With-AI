@@ -1,13 +1,18 @@
 using UnityEngine;
 using MyGame;
+using System;
+using System.Linq;
 using System.Collections.Generic;
 
 public class BuildingRegistry
 {
     private List<BuildingData> AllBuildings { get; } = new();
-    private List<BuildingData> Houses { get; } = new();
+    private List<BuildingData> AllHouses { get; } = new();
+    private List<BuildingData> SmallHouses { get; } = new();
+    private List<BuildingData> BigHouses { get; } = new();
     private List<BuildingData> Factories { get; } = new();
     private List<BuildingData> ServiceBuildings { get; } = new();
+    private List<BuildingData> SupplyBuildings { get; } = new();
     private List<BuildingData> SpecialBuildings { get; } = new();
     private List<RoadData> Roads { get; } = new();
 
@@ -17,14 +22,22 @@ public class BuildingRegistry
 
         switch (buildingDefinition.buildingType)
         {
-            case BuildingType.House:
-                Houses.Add(building);
+            case BuildingType.SmallHouse:
+                AllHouses.Add(building);
+                SmallHouses.Add(building);
+                break;
+            case BuildingType.BigHouse:
+                AllHouses.Add(building);
+                BigHouses.Add(building);
                 break;
             case BuildingType.Factory:
                 Factories.Add(building);
                 break;
             case BuildingType.Service:
                 ServiceBuildings.Add(building);
+                break;
+            case BuildingType.Supply:
+                SupplyBuildings.Add(building);
                 break;
             case BuildingType.Special:
                 SpecialBuildings.Add(building);
@@ -47,14 +60,22 @@ public class BuildingRegistry
 
         switch (buildingDefinition.buildingType)
         {
-            case BuildingType.House:
-                Houses.Remove(building);
+            case BuildingType.SmallHouse:
+                AllHouses.Remove(building);
+                SmallHouses.Remove(building);
+                break;
+            case BuildingType.BigHouse:
+                AllHouses.Remove(building);
+                BigHouses.Remove(building);
                 break;
             case BuildingType.Factory:
                 Factories.Remove(building);
                 break;
             case BuildingType.Service:
                 ServiceBuildings.Remove(building);
+                break;
+            case BuildingType.Supply:
+                SupplyBuildings.Remove(building);
                 break;
             case BuildingType.Special:
                 SpecialBuildings.Remove(building);
@@ -66,10 +87,13 @@ public class BuildingRegistry
     {
         return type switch
         {
-            BuildingType.House => Houses.Count,
+            BuildingType.AllHouse => AllHouses.Count,
+            BuildingType.SmallHouse => SmallHouses.Count,
+            BuildingType.BigHouse => BigHouses.Count,
             BuildingType.Factory => Factories.Count,
             BuildingType.Service => ServiceBuildings.Count,
             BuildingType.Special => SpecialBuildings.Count,
+            BuildingType.Supply => SupplyBuildings.Count,
             BuildingType.All => AllBuildings.Count,
             _ => 0
         };
@@ -79,39 +103,57 @@ public class BuildingRegistry
     {
         return type switch
         {
-            BuildingType.House => Houses,
+            BuildingType.AllHouse => AllHouses,
+            BuildingType.SmallHouse => SmallHouses,
+            BuildingType.BigHouse => BigHouses,
             BuildingType.Factory => Factories,
             BuildingType.Service => ServiceBuildings,
             BuildingType.Special => SpecialBuildings,
+            BuildingType.Supply => SupplyBuildings,
             BuildingType.All => AllBuildings,
             _ => new List<BuildingData>()
         };
     }
 
-    public float GetAveragePollutionIndex()
+    public int GetUpgradedBuildingCount()
     {
-        if (Houses.Count == 0)
-            return 0f;
-
-        float totalPollution = 0f;
-        foreach (var house in Houses)
+        return AllBuildings.Count(b => b.Level > 1);
+    }
+    
+    private Func<BuildingData, float>? GetIndexSelector(Indextype indextype)
+    {
+        return indextype switch
         {
-            totalPollution += house.pollutionIndex;
-        }
-        return totalPollution / Houses.Count;
+            Indextype.Pollution => h => h.pollutionIndex,
+            Indextype.Service => h => h.serviceIndex,
+            Indextype.Satisfaction => h => h.satisfactionIndex,
+            _ => null
+        };
     }
 
-    public float GetAverageServiceIndex()
+    public (float avg, float min, float max) GetIndexStats(Indextype indextype)
     {
-        if (Houses.Count == 0)
-            return 0f;
+        if (AllHouses.Count == 0)
+            return (0f, 0f, 0f);
 
-        float totalServiceIndex = 0f;
-        foreach (var house in Houses)
+        var selector = GetIndexSelector(indextype);
+        if (selector == null)
+            return (0f, 0f, 0f);
+
+        float sum = 0f;
+        float min = float.MaxValue;
+        float max = float.MinValue;
+
+        foreach (var house in AllHouses)
         {
-            totalServiceIndex += house.serviceIndex;
+            float value = selector(house);
+            sum += value;
+
+            if (value < min) min = value;
+            if (value > max) max = value;
         }
-        return totalServiceIndex / Houses.Count;
+
+        return (sum / AllHouses.Count, min, max);
     }
 
     public int GetRoadCount()
@@ -122,9 +164,9 @@ public class BuildingRegistry
     public int GetHousesNearFactoryCount()
     {
         int count = 0;
-        foreach (BuildingData house in Houses)
+        foreach (BuildingData house in AllHouses)
         {
-            if(house.pollutionIndex > 0f)
+            if (house.pollutionIndex > 0f)
             {
                 count++;
             }
@@ -135,9 +177,9 @@ public class BuildingRegistry
     public int GetHousesWithoutServiceCount()
     {
         int count = 0;
-        foreach (BuildingData house in Houses)
+        foreach (BuildingData house in AllHouses)
         {
-            if(house.serviceIndex <= 0f)
+            if (house.serviceIndex <= 0f)
             {
                 count++;
             }
@@ -159,8 +201,22 @@ public class BuildingRegistry
 
         sb.AppendLine();
 
-        sb.AppendLine($"Houses ({Houses.Count}):");
-        foreach (var b in Houses)
+        sb.AppendLine($"All Houses ({AllHouses.Count}):");
+        foreach (var b in AllHouses)
+        {
+            sb.AppendLine($" - {b.Origin}");
+        }
+
+        sb.AppendLine($"Small Houses ({SmallHouses.Count}):");
+        foreach (var b in SmallHouses)
+        {
+            sb.AppendLine($" - {b.Origin}");
+        }
+
+        sb.AppendLine();
+
+        sb.AppendLine($"Big Houses ({BigHouses.Count}):");
+        foreach (var b in BigHouses)
         {
             sb.AppendLine($" - {b.Origin}");
         }

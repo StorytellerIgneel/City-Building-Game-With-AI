@@ -7,7 +7,6 @@ public class RoadPlacementButton : MonoBehaviour
 
     public void OnClick()
     {
-        Logger.Log("Road placement button clicked.");
         roadPlacementController.StartRoadPlacement(previewPrefab);
     }
 }

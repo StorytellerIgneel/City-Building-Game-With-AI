@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a9b11e022e8024c8b57e0d0ff1b71c, type: 3}
+  m_Name: Starter Upgrade Objective
+  m_EditorClassIdentifier: 
+  Id: 1
+  Title: Buildings...
+  Description: Upgrade 1 Building
+  ObjectiveType: 2
+  ResourceType: 8
+  targetValue: 1
+  buildingType: 0
+  rewardGold: 500
+  deadlineTurn: 4
+  continuousTurnsRequired: 1

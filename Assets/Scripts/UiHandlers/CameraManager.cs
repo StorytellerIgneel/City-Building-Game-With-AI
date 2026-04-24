@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    private float moveSpeed = 5f;
+    private float moveSpeed = 10f;
     private Vector3 currentInput;
 
     [SerializeField] private float minX = 17f;

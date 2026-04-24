@@ -73,8 +73,6 @@ public class ActionPointService
         CurrentAP -= amount;
         if (CurrentAP < 0)
             CurrentAP = 0;
-
-        Logger.Log($"Used {amount} action points. Current AP: {CurrentAP}");
         OnResourceChanged?.Invoke(ResourceType.ActionPoint, CurrentAP);
     }
 

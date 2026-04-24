@@ -1,0 +1,2548 @@
+fileFormatVersion: 2
+guid: ccfaa7bd52f6d244ebacf8183ec58298
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9191553535154848280
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_0
+  - first:
+      213: -395273588683834910
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_1
+  - first:
+      213: -823979025042223164
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_2
+  - first:
+      213: -5822561373404104094
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_3
+  - first:
+      213: 8257059437524886034
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_4
+  - first:
+      213: 5622896789374403854
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_5
+  - first:
+      213: -5521871759684483550
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_6
+  - first:
+      213: -6526445637628791049
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_7
+  - first:
+      213: 8828843127928812857
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_8
+  - first:
+      213: -8040453741343191436
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_9
+  - first:
+      213: -2935230167013035407
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_10
+  - first:
+      213: -6869850278878085650
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_11
+  - first:
+      213: 7920070359540183713
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_12
+  - first:
+      213: -8092152075773295569
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_13
+  - first:
+      213: -8826096797063653951
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_14
+  - first:
+      213: 6991519108353563476
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_15
+  - first:
+      213: -8697467628064649567
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_16
+  - first:
+      213: -8339269817739087085
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_17
+  - first:
+      213: 3343755810849392296
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_18
+  - first:
+      213: -261643089106024287
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_19
+  - first:
+      213: 7741580624648817305
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_20
+  - first:
+      213: 6543504029957584254
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_21
+  - first:
+      213: 6229752125825455093
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_22
+  - first:
+      213: -4577049674786474106
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_23
+  - first:
+      213: 2658077007924979307
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_24
+  - first:
+      213: -2443214725588018550
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_25
+  - first:
+      213: 1534547994764735261
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_26
+  - first:
+      213: 2351509677851882614
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_27
+  - first:
+      213: 3380424412597669361
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_28
+  - first:
+      213: -3541385953962828009
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_29
+  - first:
+      213: -1877696816876753088
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_30
+  - first:
+      213: 4715772554727056405
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_31
+  - first:
+      213: -4033263665463575469
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_32
+  - first:
+      213: 5633560869904323066
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_33
+  - first:
+      213: 7752521456917851545
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_34
+  - first:
+      213: 4322971605930993503
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_35
+  - first:
+      213: -1168351897012863667
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_36
+  - first:
+      213: -5855930611067429050
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_37
+  - first:
+      213: 200594634151494077
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_38
+  - first:
+      213: 303549418837775287
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_39
+  - first:
+      213: -8359494096123174014
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_40
+  - first:
+      213: 4534137628382267567
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_41
+  - first:
+      213: -4866451192033315604
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_42
+  - first:
+      213: -33622678610630969
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_43
+  - first:
+      213: 5201200095760217234
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_44
+  - first:
+      213: 6636538717884653381
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_45
+  - first:
+      213: -4024689901792132465
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_46
+  - first:
+      213: -1102264038654624231
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_47
+  - first:
+      213: -7566899171200074113
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_48
+  - first:
+      213: 1326889288493901181
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_49
+  - first:
+      213: -2327523293777495708
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_50
+  - first:
+      213: 7418286390564675646
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_51
+  - first:
+      213: 5403531514172818242
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_52
+  - first:
+      213: 3866897701817075216
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_53
+  - first:
+      213: 6915581283171841596
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_54
+  - first:
+      213: -1998813264095647831
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_55
+  - first:
+      213: -8404258306882107465
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_56
+  - first:
+      213: -7078682089136072012
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_57
+  - first:
+      213: -6698508240596459641
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_58
+  - first:
+      213: -6971387357009437474
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_59
+  - first:
+      213: -5303088685321749084
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_60
+  - first:
+      213: 7622825041306172711
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_61
+  - first:
+      213: 8247975204404755098
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_62
+  - first:
+      213: -4854131460647781963
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_63
+  - first:
+      213: -5518247454601249877
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_64
+  - first:
+      213: -8902143505149403231
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_65
+  - first:
+      213: -7614172328630671196
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_66
+  - first:
+      213: 2431162313254245319
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_67
+  - first:
+      213: -5246945881339793033
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_68
+  - first:
+      213: -8993582753879029379
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_69
+  - first:
+      213: 6700988258189077048
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_70
+  - first:
+      213: 4803910178462369142
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_71
+  - first:
+      213: 7450497624553655112
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_72
+  - first:
+      213: -8701011546205952333
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_73
+  - first:
+      213: -3383527445316114431
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_74
+  - first:
+      213: 1535837755520916432
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_75
+  - first:
+      213: -9058638789343682568
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_76
+  - first:
+      213: 5180540842872971784
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_77
+  - first:
+      213: 8775746483632250380
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_78
+  - first:
+      213: -8696366537399427217
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_79
+  - first:
+      213: 7373266071448174027
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_80
+  - first:
+      213: -1838918473438581337
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_81
+  - first:
+      213: 1869503369343234443
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_82
+  - first:
+      213: -6602337182027416670
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_83
+  - first:
+      213: 2547114354180970763
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_84
+  - first:
+      213: 1970732117414629303
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_85
+  - first:
+      213: -7236299106521401012
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_86
+  - first:
+      213: -8247229761338129745
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_87
+  - first:
+      213: -8583739942552640445
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_88
+  - first:
+      213: -5620096619859578370
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_89
+  - first:
+      213: 8553111310352279348
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_90
+  - first:
+      213: -4014461016484314147
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_91
+  - first:
+      213: 9122663566850769022
+    second: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_92
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edfb1b32ca017080800000000000000
+      internalID: -9191553535154848280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9f76de3c4b38af0800000000000000
+      internalID: -395273588683834910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2390
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf4cfd3173a094f0800000000000000
+      internalID: -823979025042223164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a7657b74b123fa0800000000000000
+      internalID: -5822561373404104094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21225f68fc7f69270800000000000000
+      internalID: 8257059437524886034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_5
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2390
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05885ba6da880e40800000000000000
+      internalID: 5622896789374403854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_6
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226ceb404ee5e53b0800000000000000
+      internalID: -5521871759684483550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_7
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6fc3b65486d65a0800000000000000
+      internalID: -6526445637628791049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_8
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 2390
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93578d13c0a568a70800000000000000
+      internalID: 8828843127928812857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_9
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e47422ce19a6090800000000000000
+      internalID: -8040453741343191436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_10
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1727d21f6b7f347d0800000000000000
+      internalID: -2935230167013035407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_11
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 2390
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed7a53c19369a0a0800000000000000
+      internalID: -6869850278878085650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_12
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 2397
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a23e78970eb9ed60800000000000000
+      internalID: 7920070359540183713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_13
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 108
+        width: 1725
+        height: 2274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24c717af86e2bf80800000000000000
+      internalID: -8092152075773295569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_14
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 2307
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5dec9c9b7638580800000000000000
+      internalID: -8826096797063653951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_15
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b15cd169dd60160800000000000000
+      internalID: 6991519108353563476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_16
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae4fbff5436c4780800000000000000
+      internalID: -8697467628064649567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_17
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 2278
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313768bb846f44c80800000000000000
+      internalID: -8339269817739087085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2162
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a68359a138676e20800000000000000
+      internalID: 3343755810849392296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_19
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 2162
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a846e72ff47e5cf0800000000000000
+      internalID: -261643089106024287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_20
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1914
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a4d3cbf8e9f6b60800000000000000
+      internalID: 7741580624648817305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_21
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2085
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7575fb0f323fca50800000000000000
+      internalID: 6543504029957584254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2111
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f39f824d86847650800000000000000
+      internalID: 6229752125825455093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_23
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 2028
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687f80f229d0b70c0800000000000000
+      internalID: -4577049674786474106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_24
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2066
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b666003a4f263e420800000000000000
+      internalID: 2658077007924979307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1968
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a925bd625f71ed0800000000000000
+      internalID: -2443214725588018550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1999
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d137db6554fcb4510800000000000000
+      internalID: 1534547994764735261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_27
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1969
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674314ad79d32a020800000000000000
+      internalID: 2351509677851882614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1645
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd41fec71ea9ee20800000000000000
+      internalID: 3380424412597669361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_29
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1764
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fdc79ec387adec0800000000000000
+      internalID: -3541385953962828009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_30
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 1789
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fed2a81b411f5e0800000000000000
+      internalID: -1877696816876753088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_31
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1796
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514ea0e372ac17140800000000000000
+      internalID: 4715772554727056405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_32
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1707
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cbd8eb018f608c0800000000000000
+      internalID: -4033263665463575469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_33
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1744
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1103763cd6e2e40800000000000000
+      internalID: 5633560869904323066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_34
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1646
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dae21c03d769b60800000000000000
+      internalID: 7752521456917851545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_35
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1677
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57ed9185c74efb30800000000000000
+      internalID: 4322971605930993503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_36
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1560
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4df4edc32e29cfe0800000000000000
+      internalID: -1168351897012863667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_37
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 1560
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f5df1a22e8bbea0800000000000000
+      internalID: -5855930611067429050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_38
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1313
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db10378c1c7a8c200800000000000000
+      internalID: 200594634151494077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_39
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1485
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b31a91969c663400800000000000000
+      internalID: 303549418837775287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_40
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1510
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2836a9af86c1dfb80800000000000000
+      internalID: -8359494096123174014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_41
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1427
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8057e662e7cee30800000000000000
+      internalID: 4534137628382267567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_42
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1465
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4f316ac64e67cb0800000000000000
+      internalID: -4866451192033315604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_43
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1367
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c624091a5c888ff0800000000000000
+      internalID: -33622678610630969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_44
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1398
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294f3811eef5e2840800000000000000
+      internalID: 5201200095760217234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_45
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1368
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f14a15dc8b91c50800000000000000
+      internalID: 6636538717884653381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_46
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1044
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f820498abdd6528c0800000000000000
+      internalID: -4024689901792132465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_47
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1163
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ebd4762b8f3b0f0800000000000000
+      internalID: -1102264038654624231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_48
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 1188
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7efb618b49fcf690800000000000000
+      internalID: -7566899171200074113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_49
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1195
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7523f817ce0a6210800000000000000
+      internalID: 1326889288493901181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_50
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1105
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469f1f365e9f2bfd0800000000000000
+      internalID: -2327523293777495708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_51
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1143
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30e8bf1b2c03f660800000000000000
+      internalID: 7418286390564675646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_52
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1045
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24346e278433dfa40800000000000000
+      internalID: 5403531514172818242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_53
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1076
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016c49bd8faf9a530800000000000000
+      internalID: 3866897701817075216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_54
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 960
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c363cc6698419ff50800000000000000
+      internalID: 6915581283171841596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_55
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 960
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a76d3d2de9c244e0800000000000000
+      internalID: -1998813264095647831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_56
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 712
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b78aa9f8931e5b80800000000000000
+      internalID: -8404258306882107465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_57
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 883
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4badf17f42873cd90800000000000000
+      internalID: -7078682089136072012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_58
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 909
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f9832de3e1a03a0800000000000000
+      internalID: -6698508240596459641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_59
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 826
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc9dc18228a04f90800000000000000
+      internalID: -6971387357009437474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_60
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 864
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4adf00b00f4a766b0800000000000000
+      internalID: -5303088685321749084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_61
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 766
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72db104dcf6b9c960800000000000000
+      internalID: 7622825041306172711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_62
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 797
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a76ceafb1b67270800000000000000
+      internalID: 8247975204404755098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_63
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 767
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b97a03a729a2acb0800000000000000
+      internalID: -4854131460647781963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_64
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 443
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babf9cd4d2f3b63b0800000000000000
+      internalID: -5518247454601249877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_65
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 562
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afd40cc5ab357480800000000000000
+      internalID: -8902143505149403231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_66
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 587
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a82c55db96055690800000000000000
+      internalID: -7614172328630671196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_67
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 594
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c316d83e393db120800000000000000
+      internalID: 2431162313254245319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_68
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 505
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771fa0b358a1f27b0800000000000000
+      internalID: -5246945881339793033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_69
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 542
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7906f8a220603380800000000000000
+      internalID: -8993582753879029379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_70
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 444
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a6c654151befc50800000000000000
+      internalID: 6700988258189077048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_71
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 475
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6750228eadaeaa240800000000000000
+      internalID: 4803910178462369142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_72
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 358
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b89677d1c756760800000000000000
+      internalID: 7450497624553655112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_73
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 358
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b662d1491ccf3780800000000000000
+      internalID: -8701011546205952333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_74
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 111
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108e52617bb4b01d0800000000000000
+      internalID: -3383527445316114431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_75
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 283
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db157a2d44605510800000000000000
+      internalID: 1535837755520916432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_76
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 308
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff589c0400494280800000000000000
+      internalID: -9058638789343682568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_77
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 225
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802a8dbe27af4e740800000000000000
+      internalID: 5180540842872971784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_78
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 263
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e98c35ee6b9c970800000000000000
+      internalID: 8775746483632250380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_79
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 165
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f96b5a5bc405780800000000000000
+      internalID: -8696366537399427217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_80
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 196
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdbb1f3d6a135660800000000000000
+      internalID: 7373266071448174027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_81
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad2ac33469da76e0800000000000000
+      internalID: -1838918473438581337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_82
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 74
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81791cc86fc1f910800000000000000
+      internalID: 1869503369343234443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_83
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 93
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2abf6e94059cf54a0800000000000000
+      internalID: -6602337182027416670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_84
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09514b820b295320800000000000000
+      internalID: 2547114354180970763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_85
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfc3fd5b62795b10800000000000000
+      internalID: 1970732117414629303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_86
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49b05b5d40839b90800000000000000
+      internalID: -7236299106521401012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_87
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2496e4a34fb8d80800000000000000
+      internalID: -8247229761338129745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_88
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34461d7300e60e880800000000000000
+      internalID: -8583739942552640445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_89
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 0
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef175e996e76102b0800000000000000
+      internalID: -5620096619859578370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_90
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4376ce1ab61c2b670800000000000000
+      internalID: 8553111310352279348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_91
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 0
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd38ccb99f4c948c0800000000000000
+      internalID: -4014461016484314147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_92
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 0
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70c98b1e263a9e70800000000000000
+      internalID: 9122663566850769022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_0: -9191553535154848280
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_1: -395273588683834910
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_10: -2935230167013035407
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_11: -6869850278878085650
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_12: 7920070359540183713
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_13: -8092152075773295569
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_14: -8826096797063653951
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_15: 6991519108353563476
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_16: -8697467628064649567
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_17: -8339269817739087085
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_18: 3343755810849392296
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_19: -261643089106024287
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_2: -823979025042223164
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_20: 7741580624648817305
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_21: 6543504029957584254
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_22: 6229752125825455093
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_23: -4577049674786474106
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_24: 2658077007924979307
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_25: -2443214725588018550
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_26: 1534547994764735261
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_27: 2351509677851882614
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_28: 3380424412597669361
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_29: -3541385953962828009
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_3: -5822561373404104094
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_30: -1877696816876753088
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_31: 4715772554727056405
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_32: -4033263665463575469
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_33: 5633560869904323066
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_34: 7752521456917851545
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_35: 4322971605930993503
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_36: -1168351897012863667
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_37: -5855930611067429050
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_38: 200594634151494077
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_39: 303549418837775287
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_4: 8257059437524886034
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_40: -8359494096123174014
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_41: 4534137628382267567
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_42: -4866451192033315604
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_43: -33622678610630969
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_44: 5201200095760217234
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_45: 6636538717884653381
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_46: -4024689901792132465
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_47: -1102264038654624231
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_48: -7566899171200074113
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_49: 1326889288493901181
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_5: 5622896789374403854
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_50: -2327523293777495708
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_51: 7418286390564675646
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_52: 5403531514172818242
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_53: 3866897701817075216
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_54: 6915581283171841596
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_55: -1998813264095647831
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_56: -8404258306882107465
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_57: -7078682089136072012
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_58: -6698508240596459641
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_59: -6971387357009437474
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_6: -5521871759684483550
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_60: -5303088685321749084
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_61: 7622825041306172711
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_62: 8247975204404755098
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_63: -4854131460647781963
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_64: -5518247454601249877
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_65: -8902143505149403231
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_66: -7614172328630671196
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_67: 2431162313254245319
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_68: -5246945881339793033
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_69: -8993582753879029379
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_7: -6526445637628791049
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_70: 6700988258189077048
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_71: 4803910178462369142
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_72: 7450497624553655112
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_73: -8701011546205952333
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_74: -3383527445316114431
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_75: 1535837755520916432
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_76: -9058638789343682568
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_77: 5180540842872971784
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_78: 8775746483632250380
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_79: -8696366537399427217
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_8: 8828843127928812857
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_80: 7373266071448174027
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_81: -1838918473438581337
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_82: 1869503369343234443
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_83: -6602337182027416670
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_84: 2547114354180970763
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_85: 1970732117414629303
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_86: -7236299106521401012
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_87: -8247229761338129745
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_88: -8583739942552640445
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_89: -5620096619859578370
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_9: -8040453741343191436
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_90: 8553111310352279348
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_91: -4014461016484314147
+      pngtree-retro-distressed-sticker-of-a-cartoon-puff-of-smoke-png-image_15005134_92: 9122663566850769022
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

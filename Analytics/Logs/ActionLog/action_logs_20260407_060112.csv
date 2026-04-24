@@ -1,0 +1,102 @@
+﻿Turn,TimeSinceSessionStart,ActionType,BuildingType,PositionX,PositionY,TargetBuildingLevelBefore,TargetBuildingLevelAfter,GoldBefore,GoldAfter,APBefore,APAfter,WasValid,Notes
+1,1.727748,Build,SmallHouse,17,1,1,1,4000,2750,3,2,1,
+1,3.87766,Build,SmallHouse,22,1,1,1,2750,2250,2,1,1,
+1,13.66029,Build,Supply,5,14,1,1,2250,1450,1,0,1,
+2,27.34233,Build,Service,17,6,1,1,1450,1390,3,1,1,
+2,34.37509,Build,Supply,5,19,1,1,1390,290,1,0,1,
+3,43.74124,Build,SmallHouse,27,1,1,1,290,1170,3,2,1,
+3,48.62415,Build,SmallHouse,25,6,1,1,1170,670,2,1,1,
+3,55.2575,Upgrade,SmallHouse,25,6,1,2,670,320,1,1,0,Not enough gold
+4,62.24153,Build,SmallHouse,25,10,1,1,320,685,3,2,1,
+4,64.75703,Build,SmallHouse,19,12,1,1,685,185,2,1,1,
+5,78.07739,Build,Supply,11,14,1,1,185,580,3,2,1,
+6,92.79846,Build,SmallHouse,32,1,1,1,580,1025,3,2,1,
+6,94.98213,Build,SmallHouse,30,6,1,1,1025,525,2,1,1,
+7,109.2972,Build,Service,30,10,1,1,525,960,3,1,1,
+7,118.4984,Build,SmallHouse,25,14,1,1,960,260,1,0,1,
+8,128.9171,Build,Supply,11,19,1,1,260,1757,3,2,1,
+8,137.8173,Build,SmallHouse,19,16,1,1,1757,1107,2,1,1,
+8,143.134,Build,SmallHouse,25,18,1,1,1107,357,1,0,1,
+9,160.5874,Build,BigHouse,31,16,1,1,357,544,3,2,1,
+9,166.6915,Build,SmallHouse,19,21,1,1,544,44,2,1,1,
+10,172.0325,Build,Supply,5,24,1,1,44,1403,3,2,1,
+10,176.6037,Build,SmallHouse,25,22,1,1,1403,903,2,1,1,
+10,191.858,Upgrade,SmallHouse,25,14,2,2,903,3,1,1,1,
+11,206.0506,Build,Service,31,22,1,1,3,2282,3,1,1,
+11,215.2575,Build,Supply,11,24,1,1,2282,1482,1,0,1,
+12,226.9456,Build,Factory,16,26,1,1,1482,2495,3,1,1,
+12,232.4867,Build,SmallHouse,36,5,1,1,2495,1995,1,0,1,
+13,245.313,Build,BigHouse,38,11,1,1,1995,4335,4,4,0,Can't place building at specified location
+13,245.8724,Build,BigHouse,38,10,1,1,4335,3135,4,3,1,
+13,258.7706,Build,Supply,11,29,1,1,3135,2135,3,2,1,
+13,263.5753,Build,Supply,5,29,1,1,2135,1335,2,1,1,
+13,271.3103,Build,SmallHouse,39,16,1,1,1335,835,1,0,1,
+13,274.98,Upgrade,SmallHouse,25,14,2,2,835,835,0,0,1,Upgrade failed - already at max level
+13,276.0194,Upgrade,SmallHouse,25,10,2,2,835,485,0,0,1,
+13,276.9806,Upgrade,SmallHouse,25,14,2,2,485,485,0,0,1,Upgrade failed - already at max level
+13,278.6324,Upgrade,BigHouse,31,16,1,2,485,485,0,0,0,Not enough gold
+13,282.1062,Upgrade,SmallHouse,30,6,2,2,485,135,0,0,1,
+14,685.3432,Upgrade,BigHouse,38,10,2,2,135,2147,4,4,1,
+14,686.5453,Upgrade,SmallHouse,39,16,2,2,2147,1797,4,4,1,
+14,691.9718,Build,SmallHouse,39,20,1,1,1797,1297,4,3,1,
+14,701.3965,Build,SmallHouse,39,24,1,1,1297,597,3,2,1,
+14,705.3055,Build,SmallHouse,38,28,1,1,597,47,2,1,1,
+15,741.4457,Build,Supply,11,33,1,1,47,2604,4,4,0,Can't place building at specified location
+15,742.9548,Build,Supply,11,34,1,1,2604,1804,4,3,1,
+15,754.4196,Build,Service,45,10,1,1,1804,1004,3,1,1,
+15,758.5676,Build,SmallHouse,41,5,1,1,1004,504,1,0,1,
+15,761.0989,Upgrade,SmallHouse,41,5,2,2,504,154,0,0,1,
+16,772.7069,Build,Supply,5,34,1,1,154,3465,4,3,1,
+16,778.1429,Build,Supply,5,39,1,1,3465,2415,3,2,1,
+16,785.5124,Build,SmallHouse,46,5,1,1,2415,1915,2,1,1,
+16,789.9808,Build,SmallHouse,50,5,1,1,1915,1665,1,1,0,Can't place building at specified location
+16,790.541,Build,SmallHouse,51,5,1,1,1665,1165,1,0,1,
+16,791.9393,Upgrade,Service,45,10,2,2,1165,465,0,0,1,
+16,793.7827,Upgrade,SmallHouse,46,5,2,2,465,115,0,0,1,
+17,803.7509,Upgrade,SmallHouse,19,21,2,2,115,3406,4,4,1,
+17,804.6119,Upgrade,SmallHouse,25,22,2,2,3406,3056,4,4,1,
+17,805.4155,Upgrade,SmallHouse,25,18,2,2,3056,2706,4,4,1,
+17,806.5128,Upgrade,SmallHouse,19,16,2,2,2706,2356,4,4,1,
+17,807.2195,Upgrade,SmallHouse,25,14,2,2,2356,2356,4,4,1,Upgrade failed - already at max level
+17,808.364,Upgrade,SmallHouse,19,12,2,2,2356,2006,4,4,1,
+17,811.4538,Upgrade,SmallHouse,25,10,2,2,2006,2006,4,4,1,Upgrade failed - already at max level
+17,812.4777,Upgrade,SmallHouse,25,6,2,2,2006,1656,4,4,1,
+17,813.1417,Upgrade,SmallHouse,30,6,2,2,1656,1656,4,4,1,Upgrade failed - already at max level
+17,822.6745,Build,SmallHouse,53,9,1,1,1656,956,4,3,1,
+17,824.7349,Build,SmallHouse,53,13,1,1,956,456,3,2,1,
+18,841.809,Build,BigHouse,45,16,1,1,456,3027,4,3,1,
+18,843.1262,Upgrade,BigHouse,45,16,2,2,3027,2277,3,3,1,
+18,845.7783,Build,SmallHouse,53,17,1,1,2277,1777,3,2,1,
+18,848.2274,Upgrade,SmallHouse,53,17,2,2,1777,1427,2,2,1,
+18,849.1318,Upgrade,SmallHouse,53,13,2,2,1427,1077,2,2,1,
+18,857.6523,Build,SmallHouse,53,21,1,1,1077,327,2,1,1,
+19,872.723,Build,Supply,11,38,1,1,327,4885,4,4,0,Can't place building at specified location
+19,874.2914,Build,Supply,11,39,1,1,4885,4085,4,3,1,
+19,880.6278,Build,Supply,5,44,1,1,4085,3085,3,2,1,
+19,885.0342,Build,Supply,11,44,1,1,3085,2285,2,1,1,
+19,899.4585,Build,Service,45,22,1,1,2285,2285,1,1,0,Not enough action points
+19,900.2294,Build,Service,45,23,1,1,2285,2285,1,1,0,Not enough action points
+19,901.7988,Build,Service,45,22,1,1,2285,2285,1,1,0,Not enough action points
+19,902.2042,Build,Service,45,23,1,1,2285,2285,1,1,0,Not enough action points
+19,914.9092,Build,SmallHouse,53,25,1,1,2285,1535,1,0,1,
+19,916.4421,Upgrade,SmallHouse,53,25,2,2,1535,1185,0,0,1,
+19,917.3234,Upgrade,SmallHouse,53,21,2,2,1185,835,0,0,1,
+19,918.0159,Upgrade,SmallHouse,53,17,2,2,835,835,0,0,1,Upgrade failed - already at max level
+19,921.0109,Upgrade,SmallHouse,53,13,2,2,835,835,0,0,1,Upgrade failed - already at max level
+19,921.746,Upgrade,SmallHouse,53,9,2,2,835,485,0,0,1,
+19,924.567,Upgrade,SmallHouse,51,5,2,2,485,135,0,0,1,
+20,932.6817,Build,Service,44,22,1,1,135,4813,4,4,0,No road access for building
+20,933.6955,Build,Service,45,23,1,1,4813,4013,4,2,1,
+20,940.9992,Build,SmallHouse,47,29,1,1,4013,3413,2,1,1,
+20,943.7203,Build,SmallHouse,53,29,1,1,3413,2913,1,0,1,
+20,944.6617,Upgrade,SmallHouse,53,29,2,2,2913,2563,0,0,1,
+20,945.2186,Upgrade,SmallHouse,47,29,2,2,2563,2213,0,0,1,
+20,945.6934,Upgrade,Service,45,23,2,2,2213,1513,0,0,1,
+20,946.3184,Upgrade,SmallHouse,38,28,2,2,1513,1163,0,0,1,
+20,946.9128,Upgrade,SmallHouse,39,24,2,2,1163,813,0,0,1,
+20,948.2554,Upgrade,SmallHouse,39,20,2,2,813,463,0,0,1,
+20,951.6182,Upgrade,SmallHouse,39,16,2,2,463,463,0,0,1,Upgrade failed - already at max level
+20,954.2877,Upgrade,SmallHouse,41,5,2,2,463,463,0,0,1,Upgrade failed - already at max level
+20,955.1469,Upgrade,SmallHouse,46,5,2,2,463,463,0,0,1,Upgrade failed - already at max level
+20,955.8101,Upgrade,SmallHouse,51,5,2,2,463,463,0,0,1,Upgrade failed - already at max level
+20,956.6761,Upgrade,SmallHouse,36,5,2,2,463,113,0,0,1,

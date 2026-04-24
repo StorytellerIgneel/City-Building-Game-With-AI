@@ -6,9 +6,17 @@ using System.Text;
 using UnityEngine;
 using MyGame;
 
-public static class CsvExportService
+public class CsvExportService
 {
-    public static void ExportActionLogs(string filePath, List<ActionLogEntry> logs)
+    private ResourceService resourceService;
+    private bool useCustomPath = true; // Set to false to use Application.persistentDataPath
+
+    public CsvExportService(ResourceService resourceService)
+    {
+        this.resourceService = resourceService;
+    }
+    
+    public void ExportActionLogs(string filePath, List<ActionLogEntry> logs)
     {
         if (logs == null)
         {
@@ -18,7 +26,6 @@ public static class CsvExportService
 
         StringBuilder sb = new StringBuilder();
 
-        // Header
         sb.AppendLine(
             "Turn,TimeSinceSessionStart,ActionType,BuildingType,PositionX,PositionY," +
             "TargetBuildingLevelBefore,TargetBuildingLevelAfter," +
@@ -50,7 +57,7 @@ public static class CsvExportService
         WriteToFile(filePath, sb.ToString());
     }
 
-    public static void ExportTurnSnapshots(string filePath, List<TurnSnapshot> snapshots)
+    public void ExportTurnSnapshots(string filePath, List<TurnSnapshot> snapshots)
     {
         if (snapshots == null)
         {
@@ -60,10 +67,13 @@ public static class CsvExportService
 
         StringBuilder sb = new StringBuilder();
 
-        // Header
         sb.AppendLine(
-            "Turn,Gold,Population,AP,HouseCount,BigHouseCount,ServiceCount,FactoryCount,RoadCount," +
-            "AveragePollutionIndex,AverageServiceIndex,HousesNearFactoryCount,HousesWithoutServiceCount,TotalTaxIncome"
+            "Turn,Gold,Population,TotalSupplyProvided,AP,APUsed,UpgradeCount,DemolishCount," +
+            "SmallHouseCount,BigHouseCount,SupplyCount,ServiceCount,FactoryCount,RoadCount," +
+            "AverageSatisfactionIndex,MinSatisfactionIndex,MaxSatisfactionIndex," +
+            "AveragePollutionIndex,MinPollutionIndex,MaxPollutionIndex," +
+            "AverageServiceIndex,MinServiceIndex,MaxServiceIndex," +
+            "HousesNearFactoryCount,HousesWithoutServiceCount,HousesLowSatisfactionCount,TotalTaxIncome"
         );
 
         foreach (var snapshot in snapshots)
@@ -74,16 +84,34 @@ public static class CsvExportService
                 Escape(snapshot.Turn),
                 Escape(snapshot.Gold),
                 Escape(snapshot.Population),
+                Escape(snapshot.TotalSupplyProvided),
                 Escape(snapshot.AP),
-                Escape(snapshot.HouseCount),
+                Escape(snapshot.APUsed),
+                Escape(snapshot.UpgradeCount),
+                Escape(snapshot.DemolishCount),
+
+                Escape(snapshot.SmallHouseCount),
                 Escape(snapshot.BigHouseCount),
+                Escape(snapshot.SupplyCount),
                 Escape(snapshot.ServiceCount),
                 Escape(snapshot.FactoryCount),
                 Escape(snapshot.RoadCount),
+
+                Escape(snapshot.AverageSatisfactionIndex),
+                Escape(snapshot.MinSatisfactionIndex),
+                Escape(snapshot.MaxSatisfactionIndex),
+
                 Escape(snapshot.AveragePollutionIndex),
+                Escape(snapshot.MinPollutionIndex),
+                Escape(snapshot.MaxPollutionIndex),
+
                 Escape(snapshot.AverageServiceIndex),
+                Escape(snapshot.MinServiceIndex),
+                Escape(snapshot.MaxServiceIndex),
+
                 Escape(snapshot.HousesNearFactoryCount),
                 Escape(snapshot.HousesWithoutServiceCount),
+                Escape(snapshot.HousesLowSatisfactionCount),
                 Escape(snapshot.TotalTaxIncome)
             ));
         }
@@ -91,11 +119,22 @@ public static class CsvExportService
         WriteToFile(filePath, sb.ToString());
     }
 
-    public static void ExportAll(string folderPath, List<ActionLogEntry> logs, List<TurnSnapshot> snapshots)
+    public void ExportAll(List<ActionLogEntry> logs, List<TurnSnapshot> snapshots)
     {
+        string folderPath;
+
+        if (useCustomPath)
+        {
+            folderPath = @"C:\UnityProjects\FYP\Analytics\Logs";
+        }
+        else
+        {
+            folderPath = Path.Combine(Application.persistentDataPath, "Analytics");
+        }
+
         if (string.IsNullOrWhiteSpace(folderPath))
         {
-            Debug.LogWarning("ExportAll failed: folderPath is null or empty.");
+            Logger.LogWarning("ExportAll failed: folderPath is null or empty.");
             return;
         }
 
@@ -104,13 +143,23 @@ public static class CsvExportService
             Directory.CreateDirectory(folderPath);
         }
 
-        string actionLogPath = Path.Combine(folderPath, "action_logs.csv");
-        string snapshotPath = Path.Combine(folderPath, "turn_snapshots.csv");
+        string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+        string sessionIdShort = resourceService.CurrentSessionId.Substring(0, 6); // optional shorten
+
+        string actionLogPath = Path.Combine(
+            folderPath,
+            $"action_logs_{timestamp}_{sessionIdShort}.csv"
+        );
+
+        string snapshotPath = Path.Combine(
+            folderPath,
+            $"turn_snapshots_{timestamp}_{sessionIdShort}.csv"
+        );
 
         ExportActionLogs(actionLogPath, logs);
         ExportTurnSnapshots(snapshotPath, snapshots);
 
-        Debug.Log($"CSV export complete.\nAction logs: {actionLogPath}\nTurn snapshots: {snapshotPath}");
+        Logger.Log($"CSV export complete.\nAction logs: {actionLogPath}\nTurn snapshots: {snapshotPath}");
     }
 
     private static void WriteToFile(string filePath, string content)

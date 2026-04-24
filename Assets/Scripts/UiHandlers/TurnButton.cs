@@ -6,8 +6,6 @@ public class TurnButton : MonoBehaviour
 
     public void OnClick()
     {
-        // This method would be called when the UI button is clicked
-        Logger.Log("Build button clicked for end turn");
         turnManager.OnTurnEnd();
     }
 }

@@ -152,6 +152,10 @@ public class RoadPlacementController : MonoBehaviour
         isRoadMode = false;
         isPlacingRoad = false;
         roadForPreview.Clear();
+        if (roadPreview != null)
+        {
+            Destroy(roadPreview.gameObject);
+        }
         placementModeService.ExitMode(PlacementMode.Road);
     }
 

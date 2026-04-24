@@ -1,0 +1,30 @@
+sequenceDiagram
+    GameBootStrap->>+GameServerController: InitializeSessionAsync(playerId)
+    GameServerController->>+ApiService: StartSession(playerId, onSuccess, onError)
+    ApiService-->>+GameServerController: boolean (success)
+    if (success)
+        ApiService-->>+GameServerController: SessionData
+        GameServerController->>+GameData: new GameData(sessionData)
+        GameData-->>+GameServerController: return instance
+        GameServerController->>+GameBootStrap: Session Initialized
+    else
+        ApiService-->>+GameServerController: ErrorMessage
+        GameServerController->>+GameBootStrap: Session Initialization Failed
+
+    BuildingPlacementController-->>+InputManager: InputManager.Instance.OnConfirm += HandleConfirmBuilding;
+    InputManager-->>+BuildingPlacementController:  OnConfirm?.Invoke(mouseWorldPos) - HandleConfirmBuilding;
+    BuildingPlacementController->>+BuildingPlacementCommand: new BuildingPlacementCommand(placementService,currentBuildingDef, position);
+    BuildingPlacementCommand-->>+BuildingPlacementController: return instance
+    BuildingPlacementController->+CommandInvoker: commandInvoker.ExecuteCommand(command);
+    CommandInvoker->>+BuildingPlacementCommand: command.Execute()
+    BuildingPlacementCommand->>+BuildingPlacementService: buildingPlacementService.PlaceBuilding(buildingDefinition, position)
+    BuildingPlacementService->>+GoldService: goldService.TrySpend(cost)
+    GoldService-->>+BuildingPlacementService: boolean (Money Enough?)
+    BuildingPlacementService->>+BuildingData: new BuildingData(buildingDefinition, position)
+    BuildingData-->>+BuildingPlacementService: return instance
+    BuildingPlacementService->>+BuildingPlacementService: gameData.add(building)
+    BuildingPlacementService->>+BuildingPlacementCommand: return BuildingData
+    BuildingPlacementCommand->>+BuildingPlacementCommand: Instantiate Building
+    BuildingPlacementCommand-->>-BuildingPlacementController: Command Executed
+    BuildingPlacementController-->>-InputManager: Command Executed
+    InputManager-->>-GameBootStrap: Command Executed

@@ -16,7 +16,7 @@ public class ServiceEffectService
     public void UpdateServiceEffects()
     {
         // reset all service index before recalc
-        List<BuildingData> allHouses = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.House);
+        List<BuildingData> allHouses = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.AllHouse);
         List<BuildingData> allServices = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.Service);
         foreach (BuildingData house in allHouses)
         {
@@ -29,10 +29,10 @@ public class ServiceEffectService
                 service.Definition.effectRadius,
                 service.Definition.width,
                 service.Definition.height);
-            float serviceRate = GetServiceBuff(surroundingHouses.Count, service.GetEffectiveServiceBuff());
+            float serviceRate = GetServiceBuff(surroundingHouses.Count, service.GetLevelServiceBuff());
             foreach (BuildingData house in surroundingHouses)
             {
-                if (house.Definition.buildingType == BuildingType.House)
+                if (house.Definition.buildingType == BuildingType.SmallHouse || house.Definition.buildingType == BuildingType.BigHouse)
                 {
                     house.serviceIndex += serviceRate;
                 }
@@ -41,13 +41,14 @@ public class ServiceEffectService
 
     }
 
+    // service buff rate here affects the number of houses for the max tier of service only. 
     private float GetServiceBuff(int numberOfHouses, float serviceBuffRate)
     {
         if (numberOfHouses <= 4 * serviceBuffRate)
-            return 0.4f;
+            return 0.5f;
         else if (numberOfHouses <= 6 * serviceBuffRate)
-            return 0.2f;
+            return 0.25f;
         else
-            return 0f;
+            return 0.1f;
     }
 }

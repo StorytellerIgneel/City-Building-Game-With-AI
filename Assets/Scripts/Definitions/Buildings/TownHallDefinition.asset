@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4354dff15f2f719419ece9632384e0f9, type: 3}
   m_Name: TownHallDefinition
   m_EditorClassIdentifier: 
-  buildingType: 4
+  buildingType: 7
   id: 0
   goldCost: 0
   actionPointCost: 0
@@ -22,14 +22,17 @@ MonoBehaviour:
   width: 13
   height: 13
   effectRadius: 0
+  effectStrength: 0
   baseTax: 0
   upgradeCost: 0
+  supplyProvided: 0
   populationIncrement: 0000000000000000
   taxIncrement: 0000000000000000
   pollutionCoverageDecrement: 0000000000000000
   serviceRateBuffMultiplier:
-  - 1
-  - 1
+  - 0
+  - 0
+  supplyIncrement: 0000000000000000
   onPlacedActions: []
   onRemovedActions: []
   onTurnStartActions: []

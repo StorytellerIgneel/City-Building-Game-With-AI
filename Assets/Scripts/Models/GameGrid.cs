@@ -182,9 +182,11 @@ public class GameGrid
                 {
                     PointType.Empty => 'E',
                     PointType.Road => 'R',
-                    PointType.House => 'H',
+                    PointType.SmallHouse => 'h',
+                    PointType.BigHouse => 'H',
                     PointType.Factory => 'F',
                     PointType.Service => 'S',
+                    PointType.Supply => 'U',
                     PointType.Special => 'B',
                     PointType.None => 'N',
                     _ => '?'

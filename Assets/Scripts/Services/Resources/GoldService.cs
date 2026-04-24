@@ -8,7 +8,8 @@ public class GoldService
     public event Action<ResourceType, int> OnResourceChanged;
     private BuildingRegistry buildingRegistry;
     public int CurrentGold { get; private set; }
-    public int LastCalculatedTaxIncome { get; private set; }
+    public int LastCalculatedTaxIncome  { get; private set; } = 0;
+    public int baseTax = 500;
 
     public GoldService(int initialGold, BuildingRegistry buildingRegistry)
     {
@@ -22,20 +23,22 @@ public class GoldService
         List<BuildingData> allBuildings = buildingRegistry.GetBuildingsByType(MyGame.BuildingType.All);
         foreach (BuildingData building in allBuildings)
         {
-            if (building.Definition.buildingType == BuildingType.House)
+            if (building.Definition.buildingType == BuildingType.SmallHouse || building.Definition.buildingType == BuildingType.BigHouse)
             {
                 // todo: check formula 
-                float multiplier = 1f - building.pollutionIndex + building.serviceIndex; // reduce population based on pollution index, e.g. 0.20 pollution reduces population by 20%
-                totalTaxIncome += Mathf.RoundToInt(building.Definition.baseTax * multiplier);
+                Logger.Log("House: " + building.Definition.baseTax + " * " + building.GetEffectiveMultiplier(MultiplierType.Tax));
+                totalTaxIncome += Mathf.RoundToInt(building.Definition.baseTax * building.GetEffectiveMultiplier(MultiplierType.Tax));
             }
             else
             {
+                Logger.Log("Non-house building: " + building.Definition.baseTax);
                 totalTaxIncome += building.Definition.baseTax; // add base population from all buildings, can be modified by pollution or other factors later   
             }
         }
-        LastCalculatedTaxIncome = totalTaxIncome;
-        AddGold(totalTaxIncome);
-        Logger.Log("Calculated tax income: " + totalTaxIncome + ". Current gold: " + CurrentGold);
+        LastCalculatedTaxIncome = totalTaxIncome + baseTax;
+        AddGold(LastCalculatedTaxIncome);
+        Logger.Log("Calculated tax income: " + totalTaxIncome + "+ " + baseTax + " = " + LastCalculatedTaxIncome + ". Current gold: " + CurrentGold);
+        OnResourceChanged?.Invoke(ResourceType.TaxIncome, LastCalculatedTaxIncome);
         OnResourceChanged?.Invoke(ResourceType.Gold, CurrentGold);
     }
 

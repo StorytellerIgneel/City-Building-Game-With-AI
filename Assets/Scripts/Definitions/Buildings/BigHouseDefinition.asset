@@ -12,24 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4354dff15f2f719419ece9632384e0f9, type: 3}
   m_Name: BigHouseDefinition
   m_EditorClassIdentifier: 
-  buildingType: 1
+  buildingType: 3
   id: 3
-  goldCost: 120
+  goldCost: 1200
   actionPointCost: 1
-  basePopulation: 12
+  basePopulation: 120
   prefab: {fileID: 6683718449381500183, guid: 7bfc2e3068d83a54eb6a0d4df0248104, type: 3}
   ghostSprite: {fileID: 0}
   width: 7
   height: 6
   effectRadius: 0
-  baseTax: 0
-  upgradeCost: 75
-  populationIncrement: 0000000006000000
-  taxIncrement: 0000000003000000
-  pollutionCoverageDecrement: 00000000feffffff
+  effectStrength: 0
+  baseTax: 220
+  upgradeCost: 750
+  supplyProvided: 0
+  populationIncrement: 000000003c000000
+  taxIncrement: 000000001e000000
+  pollutionCoverageDecrement: 0000000000000000
   serviceRateBuffMultiplier:
   - 0
   - 0
+  supplyIncrement: 0000000000000000
   onPlacedActions: []
   onRemovedActions: []
   onTurnStartActions: []

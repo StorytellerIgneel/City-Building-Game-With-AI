@@ -1,11 +1,10 @@
-namespace MyGame
+public enum ObjectiveType
 {
-    public enum ObjectiveType
-    {
-        ReachPopulation,
-        BuildCount,
-        ReachGold,
-        SurviveTurns,
-        KeepPollutionBelow
-    }   
+    ReachPopulation,
+    BuildCount,
+    UpgradeCount,
+    ReachGold,
+    ReachTax,
+    KeepPollutionBelow,
+    MaintainSatisfactionAbove
 }

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Starter House Objective
   m_EditorClassIdentifier: 
   Id: 1
-  Title: Test Building House
-  Description: Test
+  Title: Buildings...
+  Description: Build a total of 5 builidngs before turn 3.
   ObjectiveType: 1
-  targetValue: 3
+  ResourceType: 8
+  targetValue: 4
   buildingType: 0
-  rewardGold: 100
-  deadlineTurn: 1
+  rewardGold: 800
+  deadlineTurn: 2
+  continuousTurnsRequired: 1

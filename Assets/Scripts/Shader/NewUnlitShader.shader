@@ -14,8 +14,8 @@ Shader "Custom/WorldGrid/CursorHighlight"
         _HighlightRadius ("Highlight Radius (in grids)", Float) = 5
 
         _OccupancyTex ("Occupancy Texture", 2D) = "black" {}
-        _GridWidth ("Grid Width", Float) = 40
-        _GridHeight ("Grid Height", Float) = 40
+        _GridWidth ("Grid Width", Float) = 80
+        _GridHeight ("Grid Height", Float) = 80
         _GridOrigin ("Grid Origin", Vector) = (0,0,0,0)
     }
 

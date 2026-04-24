@@ -1,0 +1,84 @@
+﻿Turn,TimeSinceSessionStart,ActionType,BuildingType,PositionX,PositionY,TargetBuildingLevelBefore,TargetBuildingLevelAfter,GoldBefore,GoldAfter,APBefore,APAfter,WasValid,Notes
+1,6.810029,Build,SmallHouse,17,6,1,1,4000,2750,3,2,1,
+1,9.075931,Build,SmallHouse,17,1,1,1,2750,2250,2,1,1,
+1,13.22578,Build,Supply,22,6,1,1,2250,1450,1,0,1,
+2,20.1089,Build,Factory,1,15,1,1,1450,985,3,1,1,
+2,25.54215,Build,SmallHouse,22,1,1,1,985,485,1,0,1,
+3,34.79385,Build,Factory,2,24,1,1,485,1740,4,4,0,No road access for building
+3,37.85796,Build,Factory,2,23,1,1,1740,540,4,2,1,
+3,42.09143,Build,SmallHouse,27,6,1,1,540,40,2,1,1,
+4,47.55768,Build,SmallHouse,27,1,1,1,40,510,5,4,1,
+4,51.62454,Build,SmallHouse,32,1,1,1,510,260,4,4,0,Not enough gold
+4,52.99085,Build,SmallHouse,32,1,1,1,260,260,4,4,0,Not enough gold
+5,61.04529,Build,SmallHouse,11,15,1,1,260,840,5,4,1,
+5,63.09624,Build,SmallHouse,11,20,1,1,840,340,4,3,1,
+6,77.74892,Build,Supply,32,1,1,1,340,1459,5,5,0,Can't place building at specified location
+6,78.84911,Build,Supply,32,0,1,1,1459,659,5,4,1,
+6,81.28127,Build,SmallHouse,32,6,1,1,659,159,4,3,1,
+7,90.50674,Build,SmallHouse,37,1,1,1,159,911,5,4,1,
+7,92.30737,Build,SmallHouse,39,5,1,1,911,411,4,3,1,
+7,96.39264,Build,SmallHouse,37,9,1,1,411,11,3,3,0,Can't place building at specified location
+7,96.85989,Build,SmallHouse,38,9,1,1,11,11,3,3,0,Not enough gold
+8,100.5583,Build,SmallHouse,38,10,1,1,11,1127,5,4,1,
+8,107.8628,Build,Supply,32,10,1,1,1127,327,4,3,1,
+9,128.2493,Build,SmallHouse,38,14,1,1,327,1424,5,4,1,
+9,129.7232,Build,SmallHouse,32,15,1,1,1424,924,4,3,1,
+9,134.4141,Build,SmallHouse,38,18,1,1,924,224,3,2,1,
+10,140.6599,Build,SmallHouse,32,19,1,1,224,1826,5,4,1,
+10,145.0199,Build,SmallHouse,38,22,1,1,1826,1026,4,3,1,
+10,146.7984,Build,SmallHouse,32,23,1,1,1026,526,3,2,1,
+10,148.161,Build,SmallHouse,32,27,1,1,526,26,2,1,1,
+11,164.5846,Build,SmallHouse,38,26,1,1,26,2431,5,4,1,
+11,166.8317,Build,SmallHouse,38,30,1,1,2431,1931,4,3,1,
+11,171.4295,Build,Factory,28,31,1,1,1931,731,3,1,1,
+12,188.5108,Build,SmallHouse,16,20,1,1,731,2321,6,5,1,
+12,190.1297,Build,SmallHouse,16,15,1,1,2321,1821,5,4,1,
+12,194.4449,Build,SmallHouse,21,20,1,1,1821,1021,4,3,1,
+12,195.9627,Build,SmallHouse,21,15,1,1,1021,521,3,2,1,
+12,202.7147,Build,Service,25,13,1,1,521,271,2,2,0,Can't place building at specified location
+12,203.2362,Build,Service,26,13,1,1,271,271,2,2,0,Can't place building at specified location
+12,205.4697,Demolish,SmallHouse,21,15,1,0,271,521,2,1,1,
+13,213.485,Build,Service,21,13,1,1,521,2300,6,4,1,
+13,218.9099,Build,Supply,26,20,1,1,2300,1500,4,3,1,
+13,231.2019,Build,SmallHouse,37,35,1,1,1500,650,3,2,1,
+13,233.0282,Build,SmallHouse,42,35,1,1,650,150,2,1,1,
+14,246.7796,Build,Factory,43,26,1,1,150,1820,6,4,1,
+14,252.5398,Build,SmallHouse,47,35,1,1,1820,920,4,3,1,
+14,254.1848,Build,SmallHouse,51,35,1,1,920,920,3,3,0,Can't place building at specified location
+14,255.1098,Build,SmallHouse,52,35,1,1,920,420,3,2,1,
+15,261.9544,Build,SmallHouse,57,35,1,1,420,2604,7,6,1,
+15,264.5868,Build,BigHouse,58,29,1,1,2604,1404,6,5,1,
+15,277.0886,Build,SmallHouse,58,25,1,1,1404,604,5,4,1,
+15,281.0032,Build,SmallHouse,52,30,1,1,604,104,4,3,1,
+16,306.5928,Build,Factory,48,18,1,1,104,2613,7,5,1,
+16,309.1936,Build,SmallHouse,58,21,1,1,2613,2113,5,4,1,
+16,312.3119,Build,SmallHouse,52,25,1,1,2113,2113,4,4,0,Can't place building at specified location
+16,313.1786,Build,SmallHouse,52,26,1,1,2113,1613,4,3,1,
+16,319.4817,Build,Supply,58,16,1,1,1613,563,3,2,1,
+17,337.8854,Build,Supply,44,12,1,1,563,2464,8,7,1,
+17,346.4581,Build,SmallHouse,52,13,1,1,2464,1964,7,6,1,
+17,348.4317,Build,SmallHouse,58,12,1,1,1964,1464,6,5,1,
+17,355.3463,Build,SmallHouse,51,9,1,1,1464,1214,5,5,0,No road access for building
+17,356.0498,Build,SmallHouse,52,9,1,1,1214,714,5,4,1,
+17,358.6084,Build,SmallHouse,58,8,1,1,714,214,4,3,1,
+18,372.0323,Build,Service,50,3,1,1,214,3233,8,6,1,
+18,379.8444,Build,Supply,44,7,1,1,3233,2133,6,5,1,
+18,384.1219,Build,SmallHouse,58,4,1,1,2133,1633,5,4,1,
+18,395.334,Build,BigHouse,44,1,1,1,1633,933,4,4,0,Can't place building at specified location
+18,396.0783,Build,BigHouse,43,1,1,1,933,933,4,4,0,Can't place building at specified location
+18,399.3887,Build,SmallHouse,45,3,1,1,933,433,4,3,1,
+19,412.4989,Build,SmallHouse,43,17,1,1,433,4260,8,7,1,
+19,421.8301,Build,Supply,62,4,1,1,4260,4260,7,7,0,Can't place building at specified location
+19,422.2772,Build,Supply,63,4,1,1,4260,3460,7,6,1,
+19,428.9772,Build,Supply,68,4,1,1,3460,2310,6,5,1,
+19,444.2617,Build,SmallHouse,74,2,1,1,2310,1210,5,4,1,
+19,445.9493,Build,SmallHouse,74,6,1,1,1210,710,4,3,1,
+19,447.8368,Build,SmallHouse,73,10,1,1,710,210,3,2,1,
+20,459.5174,Upgrade,Factory,48,18,2,2,210,4026,8,8,1,
+20,463.3643,Upgrade,Factory,43,26,2,2,4026,2826,8,8,1,
+20,468.8394,Build,BigHouse,65,9,1,1,2826,1626,8,7,1,
+20,475.898,Build,SmallHouse,72,14,1,1,1626,1376,7,7,0,Can't place building at specified location
+20,476.3536,Build,SmallHouse,73,14,1,1,1376,876,7,6,1,
+20,478.0808,Build,SmallHouse,67,15,1,1,876,376,6,5,1,
+20,481.6104,Build,SmallHouse,72,18,1,1,376,376,5,5,0,Not enough gold
+20,482.2004,Build,SmallHouse,71,18,1,1,376,376,5,5,0,Can't place building at specified location

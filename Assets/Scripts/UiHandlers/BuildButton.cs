@@ -9,8 +9,6 @@ public class BuildButton : MonoBehaviour
 
     public void OnClick()
     {
-        // This method would be called when the UI button is clicked
-        Logger.Log("Build button clicked for: " + buildingDefinition.buildingType);
         placementController.StartPlacement(buildingDefinition, emptyGhost);
     }
 }

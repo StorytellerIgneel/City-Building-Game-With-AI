@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2
   Title: Reach population
-  Description: Pop 10
+  Description: Reach 500 Population
   ObjectiveType: 0
-  targetValue: 10
+  ResourceType: 2
+  targetValue: 500
   buildingType: 0
-  rewardGold: 0
-  deadlineTurn: 2
+  rewardGold: 800
+  deadlineTurn: 7
+  continuousTurnsRequired: 1

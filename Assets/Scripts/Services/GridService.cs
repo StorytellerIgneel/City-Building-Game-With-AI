@@ -119,8 +119,6 @@ public class GridService
             if (building == null)
                 continue;
 
-            Logger.Log($"Found building in radius: {building.Origin.X}, {building.Origin.Y} at point {point.X}, {point.Y}");
-
             buildingsInRadius.Add(building);
         }
         Logger.Log($"Found {buildingsInRadius.Count} buildings in radius around ({origin.X}, {origin.Y}) with radius {radius}");

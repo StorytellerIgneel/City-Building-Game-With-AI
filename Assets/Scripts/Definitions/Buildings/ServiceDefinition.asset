@@ -12,24 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4354dff15f2f719419ece9632384e0f9, type: 3}
   m_Name: ServiceDefinition
   m_EditorClassIdentifier: 
-  buildingType: 3
+  buildingType: 5
   id: 5
-  goldCost: 80
+  goldCost: 800
   actionPointCost: 2
-  basePopulation: 1
+  basePopulation: 0
   prefab: {fileID: 7828296330426085815, guid: b7cdcad15697ebd4586bd5eda84f6d48, type: 3}
   ghostSprite: {fileID: 0}
-  width: 6
+  width: 7
   height: 6
   effectRadius: 2
-  baseTax: 0
-  upgradeCost: 0
+  effectStrength: 0
+  baseTax: -250
+  upgradeCost: 700
+  supplyProvided: 0
   populationIncrement: 0000000000000000
   taxIncrement: 0000000000000000
   pollutionCoverageDecrement: 0000000000000000
   serviceRateBuffMultiplier:
   - 1
   - 1.5
+  supplyIncrement: 0000000000000000
   onPlacedActions: []
   onRemovedActions: []
   onTurnStartActions: []

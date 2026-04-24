@@ -10,24 +10,20 @@ public class BuildingPlacementController : MonoBehaviour
     private PlacementModeService placementModeService;
     private PlacementPreview buildingPreview;
     private BuildingDefinition currentBuildingDef;
-    private CommandInvoker commandInvoker;
     private Transform playArea;
-    private BuildingRegistry buildingRegistry; // to add new buildings into the registry
     private bool IsBuildingMode = false;
 
 
     public void Initialize(GridController gridController, BuildingPlacementService placementService, 
-        ActionPointService actionService, GridService gridService, CommandInvoker commandInvoker,
-        Transform playArea, BuildingRegistry buildingRegistry, PlacementModeService placementModeService)
+        ActionPointService actionService, GridService gridService, Transform playArea, 
+        PlacementModeService placementModeService)
     {
         this.gridController = gridController;
         this.buildingPlacementService = placementService;
         this.actionService = actionService;
         this.gridService = gridService;
-        this.commandInvoker = commandInvoker;
         this.placementModeService = placementModeService;
         this.playArea = playArea;
-        this.buildingRegistry = buildingRegistry;
     }
 
     private void Start()

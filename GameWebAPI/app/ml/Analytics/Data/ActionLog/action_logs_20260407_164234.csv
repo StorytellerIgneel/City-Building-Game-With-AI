@@ -1,0 +1,136 @@
+﻿Turn,TimeSinceSessionStart,ActionType,BuildingType,PositionX,PositionY,TargetBuildingLevelBefore,TargetBuildingLevelAfter,GoldBefore,GoldAfter,APBefore,APAfter,WasValid,Notes
+1,134.3729,Build,SmallHouse,17,6,1,1,4000,2750,3,2,1,
+1,136.1883,Build,Supply,17,0,1,1,2750,1950,2,1,1,
+1,138.356,Build,Supply,22,0,1,1,1950,1150,1,0,1,
+2,146.0878,Build,SmallHouse,5,14,1,1,1150,920,3,2,1,
+2,148.8216,Build,BigHouse,3,18,1,1,920,920,2,2,0,Not enough gold
+2,152.1709,Build,BigHouse,3,18,1,1,920,920,2,2,0,Not enough gold
+2,155.654,Build,SmallHouse,5,18,1,1,920,420,2,1,1,
+3,161.3579,Build,SmallHouse,22,6,1,1,420,1580,3,2,1,
+3,169.7043,Build,SmallHouse,11,14,1,1,1580,680,2,1,1,
+3,171.5214,Build,SmallHouse,11,18,1,1,680,180,1,0,1,
+4,176.9884,Build,BigHouse,20,10,1,1,180,200,3,2,1,
+5,182.1189,Build,Supply,27,0,1,1,200,840,3,2,1,
+5,188.5517,Build,SmallHouse,28,6,1,1,840,140,2,1,1,
+6,201.6574,Build,SmallHouse,33,6,1,1,140,1200,3,2,1,
+6,203.4447,Build,SmallHouse,28,10,1,1,1200,700,2,1,1,
+7,217.158,Build,SmallHouse,5,22,1,1,700,1750,3,2,1,
+7,218.9756,Build,SmallHouse,11,22,1,1,1750,1250,2,1,1,
+7,224.028,Build,BigHouse,20,16,1,1,1250,50,1,0,1,
+8,231.5041,Build,Supply,32,0,1,1,50,2280,3,2,1,
+8,235.8784,Upgrade,Supply,27,0,2,2,2280,1330,2,2,1,
+8,236.5921,Upgrade,Supply,22,0,2,2,1330,730,2,2,1,
+8,240.8923,Build,SmallHouse,28,14,1,1,730,230,2,1,1,
+9,250.5909,Build,BigHouse,3,26,1,1,230,1210,3,2,1,
+9,252.6669,Build,BigHouse,11,26,1,1,1210,10,2,1,1,
+10,263.2017,Build,BigHouse,20,22,1,1,10,1430,3,2,1,
+10,266.4667,Build,BigHouse,28,18,1,1,1430,230,2,1,1,
+11,275.9756,Build,SmallHouse,33,10,1,1,230,3342,3,2,1,
+11,277.777,Build,SmallHouse,33,14,1,1,3342,2842,2,1,1,
+11,281.9264,Build,Supply,37,0,1,1,2842,2042,1,0,1,
+11,282.8119,Upgrade,Supply,37,0,2,2,2042,1442,0,0,1,
+11,285.466,Upgrade,Supply,17,0,2,2,1442,842,0,0,1,
+11,286.3376,Upgrade,Supply,22,0,2,2,842,842,0,0,1,Upgrade failed - already at max level
+12,298.1988,Build,BigHouse,3,32,1,1,842,2842,3,2,1,
+12,299.8534,Build,BigHouse,11,32,1,1,2842,1642,2,1,1,
+12,306.9986,Build,BigHouse,20,29,1,1,1642,142,1,0,1,
+13,315.1184,Build,BigHouse,3,38,1,1,142,2738,3,2,1,
+13,318.1218,Build,BigHouse,11,38,1,1,2738,1538,2,1,1,
+13,332.5089,Build,Supply,42,0,1,1,1538,438,1,0,1,
+14,337.9412,Build,Service,39,7,1,1,438,4166,3,1,1,
+14,345.7622,Demolish,BigHouse,28,18,1,0,4166,4416,1,0,1,
+14,349.5785,Upgrade,BigHouse,20,22,2,2,4416,3666,0,0,1,
+14,350.2239,Upgrade,BigHouse,20,16,2,2,3666,2916,0,0,1,
+14,352.9037,Upgrade,BigHouse,20,10,2,2,2916,2166,0,0,1,
+14,355.2184,Upgrade,SmallHouse,33,14,2,2,2166,1816,0,0,1,
+14,355.7668,Upgrade,SmallHouse,33,10,2,2,1816,1466,0,0,1,
+14,356.4484,Upgrade,SmallHouse,33,6,2,2,1466,1116,0,0,1,
+14,357.1686,Upgrade,SmallHouse,28,14,2,2,1116,766,0,0,1,
+14,357.7027,Upgrade,SmallHouse,28,10,2,2,766,416,0,0,1,
+14,358.2562,Upgrade,SmallHouse,28,6,2,2,416,66,0,0,1,
+15,362.1621,Build,SmallHouse,28,18,1,1,66,3760,3,2,1,
+15,363.3821,Build,SmallHouse,33,18,1,1,3760,3260,2,1,1,
+15,364.9541,Build,SmallHouse,28,22,1,1,3260,2760,1,0,1,
+15,374.7262,Upgrade,BigHouse,3,38,2,2,2760,1610,0,0,1,
+15,375.4722,Upgrade,BigHouse,11,38,2,2,1610,860,0,0,1,
+15,380.0615,Upgrade,SmallHouse,11,14,2,2,860,510,0,0,1,
+15,381.0351,Upgrade,SmallHouse,5,14,2,2,510,160,0,0,1,
+16,387.7557,Build,Supply,47,1,1,1,160,4530,3,2,1,
+16,396.8275,Build,Supply,52,1,1,1,4530,3380,2,1,1,
+16,400.6051,Build,BigHouse,46,7,1,1,3380,2180,1,0,1,
+16,404.6168,Upgrade,BigHouse,46,7,2,2,2180,1430,0,0,1,
+16,405.4862,Upgrade,SmallHouse,33,6,2,2,1430,1430,0,0,1,Upgrade failed - already at max level
+16,406.0047,Upgrade,SmallHouse,33,10,2,2,1430,1430,0,0,1,Upgrade failed - already at max level
+16,406.7258,Upgrade,SmallHouse,28,6,2,2,1430,1430,0,0,1,Upgrade failed - already at max level
+16,407.2496,Upgrade,SmallHouse,28,10,2,2,1430,1430,0,0,1,Upgrade failed - already at max level
+16,407.9401,Upgrade,SmallHouse,28,14,2,2,1430,1430,0,0,1,Upgrade failed - already at max level
+16,410.0467,Upgrade,Supply,47,1,2,2,1430,830,0,0,1,
+16,410.7476,Upgrade,Supply,52,1,2,2,830,230,0,0,1,
+17,418.4683,Build,SmallHouse,33,22,1,1,230,4657,3,2,1,
+17,420.0341,Build,SmallHouse,28,26,1,1,4657,4157,2,1,1,
+17,421.4345,Build,SmallHouse,33,26,1,1,4157,3657,1,0,1,
+17,423.5414,Upgrade,SmallHouse,28,26,2,2,3657,3307,0,0,1,
+17,424.1638,Upgrade,SmallHouse,33,26,2,2,3307,2957,0,0,1,
+17,424.8393,Upgrade,SmallHouse,33,22,2,2,2957,2607,0,0,1,
+17,425.4474,Upgrade,SmallHouse,28,22,2,2,2607,2257,0,0,1,
+17,426.2089,Upgrade,SmallHouse,28,22,2,2,2257,2257,0,0,1,Upgrade failed - already at max level
+17,428.9209,Upgrade,SmallHouse,33,18,2,2,2257,1907,0,0,1,
+17,429.7624,Upgrade,SmallHouse,28,14,2,2,1907,1907,0,0,1,Upgrade failed - already at max level
+17,430.6052,Upgrade,SmallHouse,28,14,2,2,1907,1907,0,0,1,Upgrade failed - already at max level
+17,431.1511,Upgrade,SmallHouse,33,14,2,2,1907,1907,0,0,1,Upgrade failed - already at max level
+17,431.53,Upgrade,SmallHouse,28,18,2,2,1907,1557,0,0,1,
+17,432.7119,Upgrade,BigHouse,20,16,2,2,1557,1557,0,0,1,Upgrade failed - already at max level
+17,433.7609,Upgrade,BigHouse,20,10,2,2,1557,1557,0,0,1,Upgrade failed - already at max level
+17,437.7767,Upgrade,SmallHouse,5,14,2,2,1557,1557,0,0,1,Upgrade failed - already at max level
+17,438.6627,Upgrade,SmallHouse,11,14,2,2,1557,1557,0,0,1,Upgrade failed - already at max level
+17,439.13,Upgrade,SmallHouse,11,18,2,2,1557,1207,0,0,1,
+17,439.7141,Upgrade,SmallHouse,5,18,2,2,1207,857,0,0,1,
+17,440.568,Upgrade,SmallHouse,5,22,2,2,857,507,0,0,1,
+17,441.2205,Upgrade,SmallHouse,11,22,2,2,507,157,0,0,1,
+18,453.8164,Build,SmallHouse,28,30,1,1,157,4156,3,2,1,
+18,455.6562,Build,SmallHouse,33,30,1,1,4156,3656,2,1,1,
+18,457.5986,Build,SmallHouse,28,34,1,1,3656,3156,1,0,1,
+18,462.2915,Upgrade,SmallHouse,28,34,2,2,3156,2806,0,0,1,
+18,462.9197,Upgrade,SmallHouse,28,30,2,2,2806,2456,0,0,1,
+18,463.4616,Upgrade,SmallHouse,33,30,2,2,2456,2106,0,0,1,
+18,469.1907,Upgrade,Service,39,7,2,2,2106,1406,0,0,1,
+18,470.0182,Upgrade,BigHouse,46,7,2,2,1406,1406,0,0,1,Upgrade failed - already at max level
+18,473.4083,Upgrade,Supply,47,1,2,2,1406,1406,0,0,1,Upgrade failed - already at max level
+18,474.0472,Upgrade,Supply,52,1,2,2,1406,1406,0,0,1,Upgrade failed - already at max level
+18,474.9523,Upgrade,Supply,42,0,2,2,1406,806,0,0,1,
+18,475.4435,Upgrade,Supply,37,0,2,2,806,806,0,0,1,Upgrade failed - already at max level
+18,476.5098,Upgrade,Supply,32,0,2,2,806,206,0,0,1,
+18,477.4256,Upgrade,Supply,27,0,2,2,206,206,0,0,1,Upgrade failed - already at max level
+19,481.0932,Build,BigHouse,39,14,1,1,206,4559,3,2,1,
+19,486.2424,Build,BigHouse,46,14,1,1,4559,2909,2,1,1,
+19,489.7997,Build,BigHouse,39,21,1,1,2909,1709,1,0,1,
+19,491.9507,Upgrade,BigHouse,39,14,2,2,1709,959,0,0,1,
+19,492.5894,Upgrade,BigHouse,46,14,2,2,959,209,0,0,1,
+20,505.2105,Build,Supply,55,6,1,1,209,6322,3,3,0,No road access for building
+20,506.9094,Build,Supply,55,5,1,1,6322,6322,3,3,0,Can't place building at specified location
+20,508.3122,Build,Supply,54,6,1,1,6322,5522,3,2,1,
+20,510.5275,Build,Supply,54,10,1,1,5522,5522,2,2,0,Can't place building at specified location
+20,511.3034,Build,Supply,55,10,1,1,5522,5522,2,2,0,Can't place building at specified location
+20,513.5292,Build,Supply,54,10,1,1,5522,5522,2,2,0,Can't place building at specified location
+20,515.0388,Build,Supply,54,11,1,1,5522,4722,2,1,1,
+20,516.5013,Upgrade,Supply,54,11,2,2,4722,4122,1,1,1,
+20,517.0612,Upgrade,Supply,54,6,2,2,4122,3522,1,1,1,
+20,523.6756,Build,Supply,54,15,1,1,3522,3522,1,1,0,Can't place building at specified location
+20,525.1567,Build,Supply,54,16,1,1,3522,2722,1,0,1,
+20,526.6713,Upgrade,Supply,54,16,2,2,2722,2122,0,0,1,
+20,532.4567,Upgrade,SmallHouse,28,34,2,2,2122,2122,0,0,1,Upgrade failed - already at max level
+20,533.1265,Upgrade,SmallHouse,28,26,2,2,2122,2122,0,0,1,Upgrade failed - already at max level
+20,533.6255,Upgrade,SmallHouse,33,30,2,2,2122,2122,0,0,1,Upgrade failed - already at max level
+20,534.7745,Upgrade,BigHouse,20,29,2,2,2122,1372,0,0,1,
+20,537.0309,Upgrade,BigHouse,20,22,2,2,1372,1372,0,0,1,Upgrade failed - already at max level
+20,537.8868,Upgrade,BigHouse,39,21,2,2,1372,622,0,0,1,
+20,540.2702,Upgrade,BigHouse,39,14,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,541.5347,Upgrade,BigHouse,46,14,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,541.7993,Upgrade,BigHouse,46,14,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,543.9782,Upgrade,BigHouse,46,14,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,544.4366,Upgrade,BigHouse,46,7,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,546.9435,Upgrade,Supply,52,1,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,547.6538,Upgrade,Supply,54,6,2,2,622,622,0,0,1,Upgrade failed - already at max level
+20,551.8772,Upgrade,SmallHouse,22,6,2,2,622,272,0,0,1,
+20,552.6906,Upgrade,SmallHouse,17,6,1,2,272,272,0,0,0,Not enough gold
+20,553.4496,Upgrade,SmallHouse,28,6,2,2,272,272,0,0,1,Upgrade failed - already at max level

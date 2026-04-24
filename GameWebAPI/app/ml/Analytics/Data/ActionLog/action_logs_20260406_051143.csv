@@ -1,0 +1,69 @@
+﻿Turn,TimeSinceSessionStart,ActionType,BuildingType,PositionX,PositionY,TargetBuildingLevelBefore,TargetBuildingLevelAfter,GoldBefore,GoldAfter,APBefore,APAfter,WasValid,Notes
+1,17.47993,Build,Factory,17,6,1,1,4000,2050,3,1,1,
+1,21.57936,Build,SmallHouse,17,1,1,1,2050,1550,1,0,1,
+2,33.96281,Build,SmallHouse,5,15,1,1,1550,1617,4,3,1,
+2,39.26194,Build,SmallHouse,5,19,1,1,1617,1117,3,2,1,
+2,42.1143,Build,BigHouse,11,15,1,1,1117,1117,2,2,0,Not enough gold
+3,50.26434,Build,Factory,11,15,1,1,1117,1452,4,2,1,
+3,56.3176,Build,BigHouse,4,23,1,1,1452,252,2,1,1,
+4,69.25017,Build,SmallHouse,22,1,1,1,252,176,5,4,1,
+4,71.55138,Build,Supply,27,1,1,1,176,176,4,4,0,Can't place building at specified location
+4,72.55361,Build,Supply,27,0,1,1,176,176,4,4,0,Not enough gold
+4,75.28343,Build,Supply,26,6,1,1,176,176,4,4,0,Not enough gold
+5,80.21709,Build,Supply,26,6,1,1,176,267,5,4,1,
+5,82.05117,Build,Supply,31,5,1,1,267,267,4,4,0,Not enough gold
+6,95.40085,Build,Supply,11,24,1,1,267,236,5,4,1,
+7,107.9038,Build,SmallHouse,27,1,1,1,236,820,5,4,1,
+8,126.49,Build,Factory,7,29,1,1,820,257,5,3,1,
+8,130.9749,Demolish,Factory,11,15,1,0,257,857,3,2,1,
+8,135.8415,Build,SmallHouse,16,30,1,1,857,357,2,1,1,
+9,151.0166,Build,BigHouse,11,17,1,1,357,481,5,4,1,
+10,161.9838,Build,SmallHouse,31,6,1,1,481,1425,5,4,1,
+10,164.2381,Build,SmallHouse,32,1,1,1,1425,925,4,3,1,
+10,168.4932,Build,SmallHouse,37,2,1,1,925,725,3,3,0,Can't place building at specified location
+10,168.9654,Build,SmallHouse,37,1,1,1,725,225,3,2,1,
+11,184.344,Build,Factory,47,2,1,1,225,189,5,3,1,
+11,188.3856,Build,Supply,42,6,1,1,189,189,3,3,0,Not enough gold
+12,194.2244,Build,SmallHouse,36,6,1,1,189,1253,6,5,1,
+12,197.9337,Build,SmallHouse,17,24,1,1,1253,753,5,4,1,
+12,202.5439,Build,SmallHouse,21,30,1,1,753,403,4,4,0,Not enough gold
+12,203.2851,Build,SmallHouse,22,30,1,1,403,403,4,4,0,Not enough gold
+13,207.1796,Build,SmallHouse,21,30,1,1,403,1642,6,5,1,
+13,213.0943,Build,SmallHouse,26,30,1,1,1642,842,5,4,1,
+13,215.4101,Build,SmallHouse,22,25,1,1,842,342,4,3,1,
+13,219.2303,Build,SmallHouse,27,25,1,1,342,342,3,3,0,Not enough gold
+14,222.793,Build,SmallHouse,27,25,1,1,342,1869,6,5,1,
+14,226.544,Build,SmallHouse,41,6,1,1,1869,1369,5,4,1,
+14,228.7937,Build,SmallHouse,42,1,1,1,1369,869,4,3,1,
+14,234.7971,Build,SmallHouse,41,10,1,1,869,19,3,2,1,
+15,248.9328,Build,SmallHouse,31,31,1,1,19,1819,6,6,0,No road access for building
+15,249.9177,Build,SmallHouse,31,30,1,1,1819,1319,6,5,1,
+15,251.8923,Build,SmallHouse,36,30,1,1,1319,819,5,4,1,
+15,254.7793,Build,SmallHouse,32,25,1,1,819,319,4,3,1,
+16,264.4267,Build,Supply,47,10,1,1,319,2671,6,5,1,
+16,269.3674,Build,Supply,47,15,1,1,2671,1721,5,4,1,
+16,276.9911,Build,SmallHouse,38,26,1,1,1721,871,4,3,1,
+16,279.749,Build,SmallHouse,32,21,1,1,871,371,3,2,1,
+17,292.8513,Build,Supply,39,21,1,1,371,3211,6,6,0,No road access for building
+17,293.8417,Build,Supply,38,21,1,1,3211,2411,6,5,1,
+17,306.0198,Build,SmallHouse,27,21,1,1,2411,1411,5,4,1,
+17,314.218,Build,SmallHouse,22,21,1,1,1411,561,4,3,1,
+17,315.9822,Build,SmallHouse,23,16,1,1,561,61,3,2,1,
+18,320.3312,Build,SmallHouse,28,16,1,1,61,2962,6,5,1,
+18,321.9839,Build,SmallHouse,33,16,1,1,2962,2462,5,4,1,
+18,325.4023,Build,SmallHouse,38,17,1,1,2462,1962,4,3,1,
+18,334.6887,Build,SmallHouse,47,20,1,1,1962,1212,3,2,1,
+18,339.5577,Build,SmallHouse,47,24,1,1,1212,462,2,1,1,
+19,364.2177,Build,Factory,46,29,1,1,462,3421,6,6,0,Can't place building at specified location
+19,365.1555,Build,Factory,47,28,1,1,3421,2221,6,4,1,
+19,369.2605,Build,SmallHouse,36,11,1,1,2221,2221,4,4,0,No road access for building
+19,374.5619,Build,SmallHouse,36,11,1,1,2221,1471,4,3,1,
+19,376.9536,Build,SmallHouse,32,11,1,1,1471,1471,3,3,0,Can't place building at specified location
+19,377.5918,Build,SmallHouse,31,11,1,1,1471,971,3,2,1,
+19,385.085,Build,SmallHouse,26,11,1,1,971,271,2,1,1,
+20,398.8298,Build,SmallHouse,18,17,1,1,271,3570,7,6,1,
+20,409.5078,Build,SmallHouse,47,36,1,1,3570,2720,6,5,1,
+20,411.6894,Build,SmallHouse,42,37,1,1,2720,2220,5,4,1,
+20,413.6409,Build,SmallHouse,41,30,1,1,2220,1720,4,3,1,
+20,418.7551,Build,SmallHouse,37,37,1,1,1720,970,3,2,1,
+20,426.9376,Build,SmallHouse,32,37,1,1,970,170,2,1,1,

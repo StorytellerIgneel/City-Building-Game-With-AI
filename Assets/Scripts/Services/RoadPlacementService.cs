@@ -6,7 +6,7 @@ public class RoadPlacementService
 {
     private GridService gridService;
     private GoldService goldService;
-    private int roadCost = 10;
+    private int roadCost = 50;
 
     public RoadPlacementService(GridService gridService, GoldService goldService)
     {

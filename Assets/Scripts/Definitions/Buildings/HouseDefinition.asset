@@ -12,24 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4354dff15f2f719419ece9632384e0f9, type: 3}
   m_Name: HouseDefinition
   m_EditorClassIdentifier: 
-  buildingType: 1
+  buildingType: 2
   id: 1
-  goldCost: 50
+  goldCost: 500
   actionPointCost: 1
-  basePopulation: 5
+  basePopulation: 50
   prefab: {fileID: 4514977445193707698, guid: a36d4156465e4e24d8fc1cfaed35eb2a, type: 3}
   ghostSprite: {fileID: 0}
   width: 5
   height: 4
   effectRadius: 0
-  baseTax: 0
-  upgradeCost: 35
+  effectStrength: 0
+  baseTax: 120
+  upgradeCost: 350
+  supplyProvided: 0
   populationIncrement: 0000000003000000
   taxIncrement: 0000000002000000
   pollutionCoverageDecrement: 0000000000000000
   serviceRateBuffMultiplier:
   - 0
   - 0
+  supplyIncrement: 000000000c000000
   onPlacedActions:
   - {fileID: 11400000, guid: 770ee5dcf53688a409cf385b334a1175, type: 2}
   onRemovedActions: []
