@@ -1,9 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurnManager : MonoBehaviour
 {
     private TurnService turnService;
+    private ResourceService resourceService;
     private BuildingRegistry buildingRegistry;
     private GoldService goldService;
     private PopulationService populationService;
@@ -24,7 +26,7 @@ public class TurnManager : MonoBehaviour
         PollutionService pollutionService, PlacementModeService placementModeService, ObjectiveService objectiveService,
         ServiceEffectService serviceEffectService, ActionPointService apService, AnalyticsService analyticsService,
         TurnService turnService, SupplyService supplyService, ResourceDisplayUI resourceDisplayUI,
-        GameServerController gameServerController)
+        GameServerController gameServerController, ResourceService resourceService)
     {
         this.buildingRegistry = buildingRegistry;
         this.goldService = goldService;
@@ -39,6 +41,7 @@ public class TurnManager : MonoBehaviour
         this.supplyService = supplyService;
         this.resourceDisplayUI = resourceDisplayUI;
         this.gameServerController = gameServerController;
+        this.resourceService = resourceService;
     }
 
     public void OnTurnEnd()
@@ -84,13 +87,18 @@ public class TurnManager : MonoBehaviour
 
         turnService.TurnAdvance();
         TurnSnapshot turnSnapshot = analyticsService.OnTurnSnapShotLog(buildingRegistry);
-        TurnActionSummary actionSummary = analyticsService.GetTurnSummary(turnService.CurrentTurnCount-1);
+        TurnActionSummary actionSummary = analyticsService.GetTurnSummary(turnService.CurrentTurnCount - 1);
 
-        if ((turnService.CurrentTurnCount-1) % GenerateReactionTurn == 0)
+
+        if ((turnService.CurrentTurnCount - 1) % GenerateReactionTurn == 0)
         {
             gameServerController.GenerateReaction(turnSnapshot, actionSummary);
         }
-        if ((turnService.CurrentTurnCount-1) % GenerateAdviceTurns == 0)
+        else
+        {
+            gameServerController.RecordTurnData(resourceService.CurrentSessionId, turnSnapshot, actionSummary);
+        }
+        if ((turnService.CurrentTurnCount - 1) % GenerateAdviceTurns == 0)
         {
             gameServerController.GenerateAdvice(analyticsService.BuildAdviceSummary());
         }
@@ -98,5 +106,17 @@ public class TurnManager : MonoBehaviour
         {
             gameServerController.GenerateObjective();
         }
+        if (turnService.CurrentTurnCount == 2)
+        {
+            EndGame();
+        }
+    }
+
+    public void EndGame()
+    {
+        ResultData.FinalPopulation = resourceService.CurrentPopulation;
+        ResultData.FinalSatisfaction = resourceService.AverageSatisfactionIndex;
+
+        SceneManager.LoadScene("EndScene");
     }
 }

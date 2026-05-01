@@ -39,10 +39,10 @@ public class GridService
 
     public bool RegisterPointsOnGrid(List<Point> points, PointType pointType, BuildingData buildingData = null)
     {
-        // Validate first
-        if(!CanPlacePoints(points))
+        if (!CanPlacePoints(points))
         {
-            Logger.LogError("Cannot place points on grid due to validation failure.");
+            // Logger.LogError("Cannot place points on grid due to validation failure.");
+            Logger.LogWarning("Cannot place points on grid due to validation failure.");
             return false;
         }
 
@@ -56,7 +56,7 @@ public class GridService
             }
             occupiedPoints.Add(p);
         }
-        gridOccupancyVisual.UpdateOccupiedCells(occupiedPoints);
+        RefreshVisual(occupiedPoints);
 
         Logger.Log("Grid: \n" + grid.ToString());
         return true;
@@ -75,7 +75,7 @@ public class GridService
             grid[p.X, p.Y].buildingData = null;
             occupiedPoints.Remove(p);
         }
-        gridOccupancyVisual.UpdateOccupiedCells(occupiedPoints);
+        RefreshVisual(occupiedPoints);
         return true;
     }
 
@@ -112,7 +112,7 @@ public class GridService
     {
         HashSet<BuildingData> buildingsInRadius = new HashSet<BuildingData>();
 
-        foreach(Point point in GetPointsAroundRect(origin, sourceWidth, sourceHeight, radius))
+        foreach (Point point in GetPointsAroundRect(origin, sourceWidth, sourceHeight, radius))
         {
             BuildingData building = grid[point.X, point.Y].buildingData;
 
@@ -125,7 +125,7 @@ public class GridService
 
         return new List<BuildingData>(buildingsInRadius);
     }
-    
+
     // todo: remove the corner grid as it feels connected through the corner grid 
     public bool HasRoadInRadius(Point origin, int sourceWidth, int sourceHeight, int radius = 1)
     {
@@ -177,10 +177,21 @@ public class GridService
     {
         if (!IsWithinBounds(point))
         {
-            Logger.LogError($"Point out of bounds: {point}");
+            // Logger.LogError($"Point out of bounds: {point}");
+            
+            Logger.LogWarning($"Point out of bounds: {point}");
             return null;
         }
 
         return grid[point.X, point.Y];
+    }
+
+    private void RefreshVisual(List<Point> occupiedPoints)
+    {
+        if (gridOccupancyVisual == null)
+        {
+            return;
+        }
+        gridOccupancyVisual.UpdateOccupiedCells(occupiedPoints);
     }
 }

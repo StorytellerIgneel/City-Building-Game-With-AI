@@ -281,11 +281,11 @@ for regressor_name, regressor in regressors.items():
 # Save model and feature columns for later use in API
 # Save model, scaler and feature columns for later use in API
 
-save_dir = r"C:\UnityProjects\FYP\GameWebAPI\app\ml\TrainedModels\Regression"
-os.makedirs(save_dir, exist_ok=True)
+# save_dir = r"C:\UnityProjects\FYP\GameWebAPI\app\ml\TrainedModels\Regression"
+# os.makedirs(save_dir, exist_ok=True)
 
-joblib.dump(regressor, os.path.join(save_dir, "lr_model.pkl"))
-joblib.dump(scaler, os.path.join(save_dir, "lr_scaler.pkl"))
-joblib.dump(feature_cols, os.path.join(save_dir, "lr_feature_cols.pkl"))
+# joblib.dump(regressor, os.path.join(save_dir, "lr_model.pkl"))
+# joblib.dump(scaler, os.path.join(save_dir, "lr_scaler.pkl"))
+# joblib.dump(feature_cols, os.path.join(save_dir, "lr_feature_cols.pkl"))
 
 print("Model, scaler, and feature list saved.")

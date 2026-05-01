@@ -1,6 +1,6 @@
-using UnityEngine;
 using System.Collections.Generic;
 using NUnit.Framework.Internal;
+using UnityEngine;
 
 public class GridOccupancyVisual : MonoBehaviour
 {
@@ -23,7 +23,7 @@ public class GridOccupancyVisual : MonoBehaviour
 
         gridMaterial = gridRenderer.material;
         gridRenderer.sortingLayerName = "Default";
-        gridRenderer.sortingOrder = 10; // Ensure it renders above other elements
+        gridRenderer.sortingOrder = 10;
 
         ClearTexture();
 
@@ -44,7 +44,7 @@ public class GridOccupancyVisual : MonoBehaviour
             }
         }
 
-        occupancyTexture.Apply();
+        applyOccupancyTexture();
     }
 
     public void UpdateOccupiedCells(List<Point> occupiedPoints)
@@ -59,6 +59,15 @@ public class GridOccupancyVisual : MonoBehaviour
             occupancyTexture.SetPixel(p.X, p.Y, Color.white);
         }
 
+        applyOccupancyTexture();
+    }
+
+    public void applyOccupancyTexture()
+    {
+        if (occupancyTexture == null)
+        {
+            return;
+        }
         occupancyTexture.Apply();
     }
 }

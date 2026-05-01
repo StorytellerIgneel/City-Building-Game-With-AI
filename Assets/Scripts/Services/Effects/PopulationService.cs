@@ -1,8 +1,8 @@
-using UnityEngine;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 using MyGame;
 using Unity.Entities.UniversalDelegates;
+using UnityEngine;
 
 
 public class PopulationService
@@ -64,5 +64,11 @@ public class PopulationService
     public void SetAverageSatisfactionIndex(float averageSatisfactionIndex)
     {
         this.averageSatisfactionIndex = averageSatisfactionIndex;
+    }
+
+    public void AddPopulationBuff(int amount)
+    {
+        BuffedPopulation += amount;
+        OnResourceChanged?.Invoke(ResourceType.Population, TotalPopulation);
     }
 }

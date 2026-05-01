@@ -3,6 +3,7 @@ from app.services.ai_service import AiService
 from app.services.gemini_service import GeminiService
 from app.services.session_websocket_service import SessionWebSocketService
 from app.services.machine_learning_service import MachineLearningService
+from app.services.postgre_service import PostgresService
 
 session_service = SessionService()
 gemini_service = GeminiService()
@@ -15,3 +16,4 @@ machine_learning_service = MachineLearningService(
     session_service=session_service,
     gemini_service=gemini_service
 )
+postgres_service = PostgresService()

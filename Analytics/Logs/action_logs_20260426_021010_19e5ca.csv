@@ -1,0 +1,5 @@
+﻿Turn,TimeSinceSessionStart,ActionType,BuildingType,PositionX,PositionY,TargetBuildingLevelBefore,TargetBuildingLevelAfter,GoldBefore,GoldAfter,APBefore,APAfter,WasValid,Notes
+1,15.8021,Build,SmallHouse,17,6,1,1,4000,2750,3,2,1,
+1,17.23545,Build,SmallHouse,17,2,1,1,2750,2750,2,2,0,Can't place building at specified location
+1,17.80195,Build,SmallHouse,18,1,1,1,2750,2250,2,1,1,
+1,19.55222,Build,SmallHouse,22,6,1,1,2250,1750,1,0,1,

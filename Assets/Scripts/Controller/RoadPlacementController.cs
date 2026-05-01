@@ -75,7 +75,8 @@ public class RoadPlacementController : MonoBehaviour
         Vector3 startPosition = gridService.SnapToGrid(mousePosition);
 
         Point startPositionGrid = gridService.WorldToGrid(startPosition);
-        Logger.Log($"Start Position for road: {startPosition.ToString()}"); //todo (low priority): set log to show second position
+        Logger.Log($"Start Position for road: {startPosition.ToString()}");
+        //todo (low priority): set log to show second position
 
         if (isPlacingRoad == false) // first click to set the starting point
         {

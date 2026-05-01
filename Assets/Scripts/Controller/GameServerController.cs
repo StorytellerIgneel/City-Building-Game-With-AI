@@ -8,9 +8,11 @@ using UnityEngine;
 public class GameServerController : MonoBehaviour
 {
     private ApiService apiService;
+    private AnalyticsService analyticsService;
     private WebSocketService webSocketService;
     private SessionContext sessionContext;
     private DynamicDifficultyAdjuster difficultyAdjuster;
+    private ResourceService resourceService;
 
     public event Action<string> onReactionReceived;
     public event Action<string> onAdviceReceived;
@@ -21,11 +23,11 @@ public class GameServerController : MonoBehaviour
     private bool isProcessing;
 
     private enum QueuedRequestType
-        {
-            Reaction,
-            Advice,
-            Objective
-        }
+    {
+        Reaction,
+        Advice,
+        Objective
+    }
 
     private class QueuedRequest
     {
@@ -38,12 +40,15 @@ public class GameServerController : MonoBehaviour
             Json = json;
         }
     }
-    public void Initialize(ApiService apiService, WebSocketService webSocketService, SessionContext sessionContext, DynamicDifficultyAdjuster difficultyAdjuster)
+    public void Initialize(ApiService apiService, AnalyticsService analyticsService, WebSocketService webSocketService, SessionContext sessionContext,
+    DynamicDifficultyAdjuster difficultyAdjuster, ResourceService resourceService)
     {
         this.apiService = apiService;
+        this.analyticsService = analyticsService;
         this.webSocketService = webSocketService;
         this.sessionContext = sessionContext;
         this.difficultyAdjuster = difficultyAdjuster;
+        this.resourceService = resourceService;
     }
 
     private void Start()
@@ -56,6 +61,13 @@ public class GameServerController : MonoBehaviour
 
         webSocketService.OnAIResponseReceived += HandleWebSocketMessage;
         webSocketService.OnError += HandleWebSocketError;
+        webSocketService.OnConnected += () =>
+        {
+            TurnSnapshot turnSnapshot = analyticsService.OnTurnSnapShotLog(null);
+            TurnActionSummary actionSummary = analyticsService.GetTurnSummary(1);
+
+            RecordTurnData(resourceService.CurrentSessionId, turnSnapshot, actionSummary);
+        };
     }
 
     private void OnDestroy()
@@ -254,6 +266,8 @@ public class GameServerController : MonoBehaviour
 
     private void EnqueueObjectiveRequest(string cluster, int estimatedPopulation, int avgFinalPopulation)
     {
+        int currentPopulation = resourceService.CurrentPopulation;
+
         var wrapper = new ObjectiveRequest
         {
             type = nameof(RequestType.GenerateObjective),
@@ -262,7 +276,24 @@ public class GameServerController : MonoBehaviour
             averageFinalPopulation = avgFinalPopulation
         };
 
+        // 👇 REMOVE ReachPopulation if too crazy
+        if (estimatedPopulation > currentPopulation * 2.5f)
+        {
+            wrapper.objectiveTypes.Remove("ReachPopulation");
+        }
+
         EnqueueRequest(QueuedRequestType.Objective, JsonUtility.ToJson(wrapper));
+    }
+
+    public void RecordTurnData(string sessionId, TurnSnapshot snapshot, TurnActionSummary actionSummary)
+    {
+        StartCoroutine(apiService.SendTurnData(
+            sessionId,
+            snapshot,
+            actionSummary,
+            onSuccess: () => Logger.Log("Successfully recorded turn data"),
+            onError: error => Logger.LogError("Failed to record turn data: " + error)
+        ));
     }
 
     private async void OnApplicationQuit()

@@ -22,6 +22,8 @@ public class GameBootstrap : MonoBehaviour
     [SerializeField] private GridOccupancyVisual gridOccupancyVisual;
     [SerializeField] private ResourceDisplayUI resourceDisplayUI;
     [SerializeField] private ObjectiveDisplayUI objectiveDisplayUI;
+    [SerializeField] private SelectorDisplayUI selectorDisplayUI;
+    [SerializeField] private NewspaperUI newspaperUI;
     [SerializeField] private List<ObjectiveDefinition> objectiveDefinitions;
     [SerializeField] private BuildingDefinition townHallDefinition;
 
@@ -62,14 +64,14 @@ public class GameBootstrap : MonoBehaviour
         RoadPlacementService roadPlacementService = new RoadPlacementService(gridService, goldService);
         ServiceEffectService serviceEffectService = new ServiceEffectService(buildingRegistry, gridService);
         TurnService turnService = new TurnService();
-        DynamicDifficultyAdjuster difficultyAdjuster = new DynamicDifficultyAdjuster();
-
         ResourceService resourceService = new ResourceService(goldService, populationService, apService, turnService,
             timeService, supplyService, sessionContext);
 
         // Analytics
         CsvExportService csvExportService = new CsvExportService(resourceService);
         AnalyticsService analyticsService = new AnalyticsService(resourceService, csvExportService);
+        DynamicDifficultyAdjuster difficultyAdjuster = new DynamicDifficultyAdjuster(analyticsService, buildingRegistry);
+
         // temporary
         this.analyticsService = analyticsService; // Store reference for OnApplicationQuit
         BuildingPlacementService placementService = new BuildingPlacementService(gameData, goldService, gridService,
@@ -81,20 +83,22 @@ public class GameBootstrap : MonoBehaviour
 
         // todo: doc on the sequence of intialization
         // todo: clean magic numbers here and throughout the codebase
-        gameServerController.Initialize(apiService, webSocketService, sessionContext, difficultyAdjuster);
+        gameServerController.Initialize(apiService, analyticsService, webSocketService, sessionContext, difficultyAdjuster, resourceService);
 
         ObjectiveService objectiveService = new ObjectiveService(objectiveDefinitions, buildingRegistry,
-            goldService, resourceService, gameServerController, difficultyAdjuster);
+            goldService, resourceService, gameServerController, difficultyAdjuster, populationService);
 
         gridOccupancyVisual.Initialize(gridWidth, gridHeight);
         gridController.Initialize(gridMaterial, gridOverlay);
         placementController.Initialize(gridController, placementService, apService, gridService, playArea, placementModeService);
         buildingActionController.Initialize(placementService, gridService, placementModeService, apService);
         resourceDisplayUI.Initialize(goldService, populationService, apService, turnService, supplyService);
+        newspaperUI.Initialize(gameServerController);
+        selectorDisplayUI.Initialize(buildingActionController);
         objectiveDisplayUI.Initialize(objectiveService, turnService);
         turnManager.Initialize(buildingRegistry, goldService, populationService, pollutionService,
             placementModeService, objectiveService, serviceEffectService, apService, analyticsService, turnService, supplyService, resourceDisplayUI
-            , gameServerController);
+            , gameServerController, resourceService);
         roadPlacementController.Initialize(gridController, gridService, playArea, roadPlacementService, placementModeService, buildingRegistry);
 
         // Map initialization
@@ -106,6 +110,7 @@ public class GameBootstrap : MonoBehaviour
         MapSetup(commandExecutor);
         objectiveService.SetNextActiveObjective();
 
+        Logger.Log("Game initialized");
         // pre-game setup
         gridOverlay.SetActive(false);
         gridMaterial.SetFloat("_HighlightRadius", 5f);
@@ -145,7 +150,7 @@ public class GameBootstrap : MonoBehaviour
         // Ensure analytics data is exported when the application quits
         if (analyticsService != null)
         {
-            // analyticsService.ExportData();
+            analyticsService.ExportData();
         }
     }
 }

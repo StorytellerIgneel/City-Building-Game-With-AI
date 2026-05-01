@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using MyGame;
-using UnityEngine;
 using System.IO;
 using System.Linq;
+using MyGame;
+using UnityEngine;
 
 public class AnalyticsService
 {
@@ -52,7 +52,7 @@ public class AnalyticsService
         {
             APBefore = resourceService.MaxActionPoints; // if no valid actions yet, AP before is max AP
         }
-        
+
         previousGold = goldAfter;
         previousAP = APAfter;
 
@@ -106,13 +106,28 @@ public class AnalyticsService
 
     public TurnSnapshot OnTurnSnapShotLog(BuildingRegistry buildingRegistry)
     {
-        List<BuildingData> houses = buildingRegistry.GetBuildingsByType(BuildingType.AllHouse);
+        var satisfactionStats = (avg: 0f, min: 0f, max: 0f);
+        var pollutionStats = (avg: 0f, min: 0f, max: 0f);
+        var serviceStats = (avg: 0f, min: 0f, max: 0f);
 
-        var satisfactionStats = buildingRegistry.GetIndexStats(Indextype.Satisfaction);
-        var pollutionStats = buildingRegistry.GetIndexStats(Indextype.Pollution);
-        var serviceStats = buildingRegistry.GetIndexStats(Indextype.Service);
+        if (buildingRegistry != null)
+        {
+            satisfactionStats = buildingRegistry.GetIndexStats(Indextype.Satisfaction);
+            pollutionStats = buildingRegistry.GetIndexStats(Indextype.Pollution);
+            serviceStats = buildingRegistry.GetIndexStats(Indextype.Service);
+        }
 
-        var TurnActionSummary = GetTurnActionSummary(resourceService.CurrentTurnCount - 1); // get previous turn's action summary
+        (int ApUsed, int UpgradeCount, int DemolishCount) turnActionSummary;
+
+        if (resourceService.CurrentTurnCount <= 1)
+        {
+            // T1 → no previous turn
+            turnActionSummary = (0, 0, 0);
+        }
+        else
+        {
+            turnActionSummary = GetTurnActionSummary(resourceService.CurrentTurnCount - 1);
+        }
 
         TurnSnapshot newSnapshot = new TurnSnapshot
         {
@@ -120,38 +135,42 @@ public class AnalyticsService
             Gold = resourceService.CurrentGold,
             Population = resourceService.CurrentPopulation,
             TotalSupplyProvided = resourceService.CurrentSupplyProvided,
+
             AP = resourceService.CurrentActionPoints,
-            APUsed = TurnActionSummary.ApUsed,
-            UpgradeCount = TurnActionSummary.UpgradeCount,
-            DemolishCount = TurnActionSummary.DemolishCount,
-            SmallHouseCount = buildingRegistry.CountBuildingByType(BuildingType.SmallHouse),
-            BigHouseCount = buildingRegistry.CountBuildingByType(BuildingType.BigHouse),
-            FactoryCount = buildingRegistry.CountBuildingByType(BuildingType.Factory),
-            ServiceCount = buildingRegistry.CountBuildingByType(BuildingType.Service),
-            SupplyCount = buildingRegistry.CountBuildingByType(BuildingType.Supply),
-            RoadCount = buildingRegistry.GetRoadCount(),
+            APUsed = turnActionSummary.ApUsed,
+            UpgradeCount = turnActionSummary.UpgradeCount,
+            DemolishCount = turnActionSummary.DemolishCount,
+
+            SmallHouseCount = buildingRegistry?.CountBuildingByType(BuildingType.SmallHouse) ?? 0,
+            BigHouseCount = buildingRegistry?.CountBuildingByType(BuildingType.BigHouse) ?? 0,
+            FactoryCount = buildingRegistry?.CountBuildingByType(BuildingType.Factory) ?? 0,
+            ServiceCount = buildingRegistry?.CountBuildingByType(BuildingType.Service) ?? 0,
+            SupplyCount = buildingRegistry?.CountBuildingByType(BuildingType.Supply) ?? 0,
+            RoadCount = buildingRegistry?.GetRoadCount() ?? 0,
+
             AverageSatisfactionIndex = satisfactionStats.avg,
             MinSatisfactionIndex = satisfactionStats.min,
             MaxSatisfactionIndex = satisfactionStats.max,
+
             AveragePollutionIndex = pollutionStats.avg,
             MinPollutionIndex = pollutionStats.min,
             MaxPollutionIndex = pollutionStats.max,
+
             AverageServiceIndex = serviceStats.avg,
             MinServiceIndex = serviceStats.min,
             MaxServiceIndex = serviceStats.max,
-            HousesNearFactoryCount = buildingRegistry.GetHousesNearFactoryCount(),
-            HousesWithoutServiceCount = buildingRegistry.GetHousesWithoutServiceCount(),
+
+            HousesNearFactoryCount = buildingRegistry?.GetHousesNearFactoryCount() ?? 0,
+            HousesWithoutServiceCount = buildingRegistry?.GetHousesWithoutServiceCount() ?? 0,
+
             TotalTaxIncome = resourceService.LastCalculatedTaxIncome
         };
+
         turnSnapshots.Add(newSnapshot);
-        foreach (TurnSnapshot snapshot in turnSnapshots)
-        {
-            Logger.Log(snapshot.ToString());
-        }
         return newSnapshot;
     }
 
-   public TurnActionSummary SummarizeTurnActions(List<ActionLogEntry> logs)
+    public TurnActionSummary SummarizeTurnActions(List<ActionLogEntry> logs)
     {
         TurnActionSummary summary = new TurnActionSummary();
         bool turnSet = false;

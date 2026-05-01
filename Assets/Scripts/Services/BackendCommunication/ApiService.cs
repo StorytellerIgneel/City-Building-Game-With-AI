@@ -121,4 +121,70 @@ public class ApiService
             onError?.Invoke(errorMessage);
         }
     }
+
+    public IEnumerator SendTurnData(
+    string sessionId,
+    TurnSnapshot turnSnapshot,
+    TurnActionSummary turnActionSummary,
+    Action onSuccess = null,
+    Action<string> onError = null)
+    {
+        if (string.IsNullOrEmpty(sessionId))
+        {
+            string errorMessage = "SendTurnData failed: sessionId is null or empty.";
+            Logger.Log(errorMessage);
+            onError?.Invoke(errorMessage);
+            yield break;
+        }
+
+        if (turnSnapshot == null)
+        {
+            string errorMessage = "SendTurnData failed: turnSnapshot is null.";
+            Logger.Log(errorMessage);
+            onError?.Invoke(errorMessage);
+            yield break;
+        }
+
+        if (turnActionSummary == null)
+        {
+            string errorMessage = "SendTurnData failed: turnActionSummary is null.";
+            Logger.Log(errorMessage);
+            onError?.Invoke(errorMessage);
+            yield break;
+        }
+
+        // 🔥 wrap both into one object
+        TurnDataRequest requestBody = new TurnDataRequest
+        {
+            turn_snapshot = turnSnapshot,
+            turn_action_summary = turnActionSummary
+        };
+
+        string json = JsonUtility.ToJson(requestBody);
+
+        Logger.Log($"Sending turn data for session {sessionId}: {json}");
+
+        string url = $"{baseUrl}/session/{sessionId}/turn-data";
+
+        using var request = new UnityWebRequest(url, "POST");
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            Logger.Log($"Turn data sent successfully. Session ID: {sessionId}");
+            onSuccess?.Invoke();
+        }
+        else
+        {
+            string errorMessage = $"{request.error}\n{request.downloadHandler.text}";
+            Logger.Log($"Error sending turn data: {errorMessage}");
+            onError?.Invoke(errorMessage);
+        }
+    }
 }

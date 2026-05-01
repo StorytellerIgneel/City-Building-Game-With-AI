@@ -1,6 +1,6 @@
+using MyGame;
 using TMPro;
 using UnityEngine;
-using MyGame;
 
 public class NewspaperUI : MonoBehaviour
 {
@@ -18,6 +18,10 @@ public class NewspaperUI : MonoBehaviour
         gameServerController.onAdviceReceived += HandleAdviceReceived;
     }
 
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
     private void OnDestroy()
     {
         // Unsubscribe
@@ -36,5 +40,15 @@ public class NewspaperUI : MonoBehaviour
     private void HandleAdviceReceived(string advice)
     {
         adviceText.text = advice;
+    }
+
+    public void OnShowClicked()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void OnExitClicked()
+    {
+        gameObject.SetActive(false);
     }
 }

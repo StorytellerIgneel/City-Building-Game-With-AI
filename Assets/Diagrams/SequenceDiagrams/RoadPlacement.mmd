@@ -1,0 +1,62 @@
+sequenceDiagram
+    actor Player
+    participant Button as RoadPlacementButton
+    participant RPC as RoadPlacementController
+    participant PMS as PlacementModeService
+    participant GC as GridController
+    participant IM as InputManager
+    participant GS as GridService
+    participant RPS as RoadPlacementService
+    participant Gold as GoldService
+    participant BR as BuildingRegistry
+    participant World as Game World
+
+    Player->>Button: Click road button
+    Button->>RPC: StartRoadPlacement(previewPrefab)
+
+    RPC->>PMS: TryEnterMode(Road)
+    alt Mode denied
+        PMS-->>RPC: false
+        RPC-->>Player: Stop process
+    else Mode allowed
+        PMS-->>RPC: true
+        RPC->>GC: SetGridOverlayActive()
+        RPC->>World: Create road preview
+    end
+
+    Player->>IM: First click
+    IM->>RPC: HandleConfirmRoad(mousePosition)
+    RPC->>GS: SnapToGrid(mousePosition)
+    RPC->>GS: WorldToGrid(startPosition)
+    RPC->>RPC: Store startPoint
+
+    Player->>IM: Second click
+    IM->>RPC: HandleConfirmRoad(mousePosition)
+    RPC->>GS: SnapToGrid(mousePosition)
+    RPC->>GS: WorldToGrid(endPosition)
+    RPC->>RPS: GenerateLShapePoints(startPoint, endPoint)
+    RPS-->>RPC: roadPoints
+
+    RPC->>RPS: PlaceRoad(roadPoints, buildingRegistry)
+
+    RPS->>GS: CanPlacePoints(roadPoints)
+    RPS->>Gold: TrySpend(roadCost * roadPoints.Count)
+    RPS->>GS: RegisterPointsOnGrid(roadPoints, Road)
+
+    alt Placement failed
+        RPS-->>RPC: null
+        RPC->>RPC: ExitRoadPlacementModeCleanUp()
+    else Placement successful
+        loop For each road point
+            RPS->>BR: Register(roadData)
+        end
+        RPS-->>RPC: placedRoads
+
+        loop For each RoadData
+            RPC->>World: Instantiate road prefab
+            RPC->>World: Assign road instance
+        end
+
+        RPC->>GC: SetGridOverlayInactive()
+        RPC->>PMS: ExitMode(Road)
+    end

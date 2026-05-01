@@ -5,22 +5,28 @@ using UnityEngine;
 public class DynamicDifficultyAdjuster
 {
     private AnalyticsService analyticsService;
+    private BuildingRegistry buildingRegistry;
 
     // number of turns to average for growth rate calculations
     private int turnAverageWindow = 3;
     public int predictedPopulationT20;
 
+    public DynamicDifficultyAdjuster(AnalyticsService analyticsService, BuildingRegistry buildingRegistry)
+    {
+        this.analyticsService = analyticsService;
+        this.buildingRegistry = buildingRegistry;
+    }
 
     public int GetDeadlineTurn(ObjectiveType type, ObjectiveDifficulty difficulty, int currentTurn)
     {
         int extraTurns = type switch
         {
-            ObjectiveType.KeepPollutionBelow => 5,
-            ObjectiveType.MaintainSatisfactionAbove => 5,
-            ObjectiveType.ReachPopulation => 5,
-            ObjectiveType.ReachTax => 5,
-            ObjectiveType.BuildCount => 5,
-            _ => 5
+            ObjectiveType.KeepPollutionBelow => 4,
+            ObjectiveType.MaintainSatisfactionAbove => 4,
+            ObjectiveType.ReachPopulation => 4,
+            ObjectiveType.ReachTax => 4,
+            ObjectiveType.BuildCount => 4,
+            _ => 4
         };
 
         return currentTurn + extraTurns;
@@ -71,9 +77,9 @@ public class DynamicDifficultyAdjuster
     {
         float multiplier = difficulty switch
         {
-            ObjectiveDifficulty.Easy => 0.9f,
+            ObjectiveDifficulty.Easy => 0.8f,
             ObjectiveDifficulty.Normal => 1.0f,
-            ObjectiveDifficulty.Hard => 1.1f,
+            ObjectiveDifficulty.Hard => 1.2f,
             _ => 1.0f
         };
 
@@ -82,7 +88,7 @@ public class DynamicDifficultyAdjuster
 
     private float GetBuildCountTarget(ObjectiveDifficulty difficulty)
     {
-        if (analyticsService == null)
+        if (analyticsService == null || buildingRegistry == null)
         {
             return difficulty switch
             {
@@ -93,13 +99,16 @@ public class DynamicDifficultyAdjuster
             };
         }
 
-        // Average builds per turn over last 3 turns (excluding roads)
+        // ===== CURRENT COUNT (exclude Special like your logic elsewhere) =====
+        int currentCount =
+            buildingRegistry.CountBuildingByType(BuildingType.All) -
+            buildingRegistry.CountBuildingByType(BuildingType.Special);
+
+        // ===== FUTURE BUILDS =====
         int avgBuildPerTurn = analyticsService.GetAverageBuildCountLastTurns(3);
+        float expectedBuilds = avgBuildPerTurn * 5f;
 
-        // Predict how many builds player would normally do in 5 turns
-        float baseline = avgBuildPerTurn * 5f;
-
-        // Difficulty scaling
+        // ===== DIFFICULTY SCALING =====
         float multiplier = difficulty switch
         {
             ObjectiveDifficulty.Easy => 0.9f,
@@ -108,10 +117,10 @@ public class DynamicDifficultyAdjuster
             _ => 1.0f
         };
 
-        float target = baseline * multiplier;
+        float target = currentCount + (expectedBuilds * multiplier);
 
-        // Clamp to avoid nonsense values (important for edge cases)
-        target = Mathf.Clamp(target, 3f, 20f);
+        // ===== CLAMP (important) =====
+        target = Mathf.Clamp(target, currentCount + 2f, currentCount + 20f);
 
         return Mathf.Ceil(target);
     }

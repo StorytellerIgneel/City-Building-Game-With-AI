@@ -8,7 +8,7 @@ public class BuildingDefinition : ScriptableObject
     public string id;
     public int goldCost;
     public int actionPointCost;
-    public int basePopulation; // how much population this building provides at base level, can be modified by pollution or other factors
+    public int basePopulation; // how much population this building provides at base level, later can be modified by pollution or other factors
     public GameObject prefab; //the actual building prefab to instantiate
     public Sprite ghostSprite; //preview image for the building ghost
     public int width; // in terms of grid

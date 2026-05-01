@@ -11,11 +11,16 @@ public class SelectorDisplayUI : MonoBehaviour
 
     public void Initialize(BuildingActionController buildingActionController)
     {
-        this.buildingActionController = buildingActionController;   
+        this.buildingActionController = buildingActionController;
 
         // Subscribe
         buildingActionController.OnBuildingSelected += HandleBuildingSelected;
         buildingActionController.OnBuildingDeselected += HandleBuildingDeselected;
+    }
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
     }
 
     private void OnDestroy()
@@ -30,6 +35,7 @@ public class SelectorDisplayUI : MonoBehaviour
 
     private void HandleBuildingSelected(BuildingType buildingType, int level, float satisfactionIndex)
     {
+        gameObject.SetActive(true);
         buildingTypeText.text = buildingType.ToString();
         buildingLevelText.text = $"Level: {level}";
         buildingSatisfactionText.text = $"Satisfaction: {Mathf.RoundToInt(satisfactionIndex * 100)}%";
@@ -37,6 +43,7 @@ public class SelectorDisplayUI : MonoBehaviour
 
     private void HandleBuildingDeselected()
     {
+        gameObject.SetActive(false);
         buildingTypeText.text = "";
         buildingLevelText.text = "";
         buildingSatisfactionText.text = "";

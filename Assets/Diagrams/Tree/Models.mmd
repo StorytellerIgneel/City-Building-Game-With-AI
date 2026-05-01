@@ -1,0 +1,42 @@
+graph TD
+    A[Data Models]
+
+    %% Gameplay
+    A --> B[Gameplay Models]
+
+    B --> B1[Definition Models]
+    B1 --> BD[BuildingDefinition]
+    B1 --> OD[ObjectiveDefinition]
+
+    B --> B2[Runtime State Models]
+    B2 --> BData[BuildingData]
+    B2 --> OState[ObjectiveState]
+
+    %% Analytics
+    A --> C[Analytical Models]
+    C --> TS[TurnSnapshot]
+    C --> AL[ActionLogEntry]
+
+    %% DTO
+    A --> D[DTO Models]
+
+    %% Requests
+    D --> D1[Requests]
+    D1 --> AIReq[AIRequests]
+    AIReq --> AdviceReq[AdviceRequests]
+    AIReq --> ObjectiveReq[ObjectiveRequests]
+    AIReq --> ReactionReq[ReactionRequests]
+
+    D1 --> QueueReq[QueuedRequests]
+    D1 --> TurnDataReq[SaveTurnDataRequests]
+    D1 --> StartSessionReq[StartSessionRequests]
+
+    %% Responses
+    D --> D2[Responses]
+    D2 --> AIRes[AIResponse]
+    AIRes --> AdviceRes[AdviceResponse]
+    AIRes --> ObjectiveRes[ObjectiveResponse]
+    AIRes --> ReactionRes[ReactionResponse]
+
+    D2 --> PredictRes[PredictResponse]
+    D2 --> StartSessionRes[StartSessionResponse]

@@ -1,0 +1,60 @@
+sequenceDiagram
+    actor Player
+    participant Button as BuildButton
+    participant BC as BuildingPlacementController
+    participant PMS as PlacementModeService
+    participant BPS as BuildingPlacementService
+    participant GS as GridService
+    participant Gold as GoldService
+    participant AP as ActionPointService
+    participant BR as BuildingRegistry
+    participant AS as AnalyticsService
+    participant World as Game World
+
+    Player->>Button: Click build button
+    Button->>BC: StartPlacement(buildingDefinition, emptyGhost)
+
+    BC->>PMS: TryEnterMode(Building)
+    PMS-->>BC: Allowed / Denied
+
+    BC->>AP: HasActionPoints()
+    AP-->>BC: true / false
+
+    alt Validation failed
+        BC->>PMS: ExitMode(Building)
+    else Validation passed
+        BC->>World: Create ghost preview
+        BC->>GS: Enable grid overlay
+    end
+
+    Player->>BC: Confirm placement via InputManager
+    BC->>GS: SnapToGrid(mousePosition)
+    GS-->>BC: snappedPosition
+
+    BC->>BPS: PlaceBuilding(buildingDefinition, snappedPosition)
+
+    BPS->>GS: CanPlacePoints(buildingPoints)
+    GS-->>BPS: true / false
+
+    BPS->>GS: HasRoadInRadius(...)
+    GS-->>BPS: true / false
+
+    BPS->>Gold: TrySpend(goldCost)
+    Gold-->>BPS: success / fail
+
+    BPS->>GS: RegisterPointsOnGrid(...)
+    GS-->>BPS: success / fail
+
+    alt Placement failed
+        BPS->>AS: Log failed build action
+        BPS-->>BC: null
+    else Placement successful
+        BPS->>BR: Register(buildingDefinition, buildingData)
+        BPS->>AP: UseActionPoint(actionPointCost)
+        BPS->>AS: Log successful build action
+        BPS-->>BC: buildingData
+
+        BC->>World: Instantiate building prefab
+        BC->>World: Initialize Building component
+        BC->>BC: ExitBuildModeCleanup()
+    end

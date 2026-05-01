@@ -1,0 +1,8 @@
+﻿Turn,Gold,Population,TotalSupplyProvided,AP,APUsed,UpgradeCount,DemolishCount,SmallHouseCount,BigHouseCount,SupplyCount,ServiceCount,FactoryCount,RoadCount,AverageSatisfactionIndex,MinSatisfactionIndex,MaxSatisfactionIndex,AveragePollutionIndex,MinPollutionIndex,MaxPollutionIndex,AverageServiceIndex,MinServiceIndex,MaxServiceIndex,HousesNearFactoryCount,HousesWithoutServiceCount,HousesLowSatisfactionCount,TotalTaxIncome
+1,3250,0,0,3,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,3250,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,2185,98,240,3,3,0,0,2,0,1,0,0,15,0.78,0.76,0.8,0.05,0,0.1,0,0,0,1,2,0,735
+3,2910,94,480,3,1,0,0,2,0,2,0,0,15,0.74,0.72,0.76,0.15,0.1,0.2,0,0,0,2,2,0,725
+4,3635,94,480,3,0,0,0,2,0,2,0,0,15,0.74,0.72,0.76,0.15,0.1,0.2,0,0,0,2,2,0,725
+5,3980,144,480,3,1,0,0,3,0,2,0,0,15,0.76,0.72,0.8,0.1,0,0.2,0,0,0,2,3,0,845
+6,4065,244,480,3,2,0,0,5,0,2,0,0,15,0.776,0.72,0.8,0.06,0,0.2,0,0,0,2,5,0,1085

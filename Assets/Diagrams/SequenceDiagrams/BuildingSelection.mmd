@@ -1,0 +1,38 @@
+sequenceDiagram
+    Player->>+InputManager: Click left mouse
+    InputManager->>InputManager: GetMousePosition()
+
+    BuildingActionController-->>InputManager: OnConfirm += HandleSelect
+    InputManager-->>+BuildingActionController: OnConfirm(mouseWorldPos)
+
+    BuildingActionController->>+PlacementModeService: IsIdle
+    PlacementModeService-->>-BuildingActionController: true / false
+
+    alt Placement mode not idle
+        BuildingActionController-->>InputManager: Ignore input
+    else Placement mode idle
+        BuildingActionController->>+GridService: WorldToGrid(mouseWorldPos)
+        GridService-->>BuildingActionController: grid position
+
+        BuildingActionController->>+GridService: GetGridCell(position)
+        GridService-->>BuildingActionController: GridCell
+
+        BuildingActionController->>BuildingActionController: buildingData = gridCell?.buildingData
+
+        alt No building or Special type
+            BuildingActionController->>BuildingActionController: ClearSelection()
+            BuildingActionController-->>SelectorDisplayUI: OnBuildingDeselected()
+            SelectorDisplayUI->>SelectorDisplayUI: SetActive(false)
+            SelectorDisplayUI->>SelectorDisplayUI: Clear UI text
+        else Valid building
+            BuildingActionController->>BuildingActionController: selectedBuilding = buildingData
+            BuildingActionController-->>SelectorDisplayUI: Event: OnBuildingSelected(type, level, satisfaction)
+            SelectorDisplayUI->>SelectorDisplayUI: SetActive(true)
+            SelectorDisplayUI->>SelectorDisplayUI: Update buildingTypeText
+            SelectorDisplayUI->>SelectorDisplayUI: Update buildingLevelText
+            SelectorDisplayUI->>SelectorDisplayUI: Update satisfactionText
+        end
+    end
+
+    BuildingActionController-->>-InputManager: Done
+    InputManager-->>-Player: UI updated

@@ -15,7 +15,6 @@ class GeminiService:
 
         self.client = genai.Client(api_key=api_key)
         self.model = "gemini-2.5-flash"
-        # self.chat = self.client.chats.create(model=self.model)
 
     def generate_with_memory(
         self,
@@ -51,7 +50,7 @@ class GeminiService:
                 print(f"[Gemini ERROR] attempt {attempt+1}: {e}")
 
                 if attempt == retries - 1:
-                    raise  # still fail → let caller handle fallback
+                    raise  # still fail then let caller handle fallback
 
                 time.sleep(delay)
                 delay *= 2  # exponential backoff

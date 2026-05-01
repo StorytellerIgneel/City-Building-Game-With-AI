@@ -23,21 +23,6 @@ public class SupplyService
         currentSupplyRatio = 1f; // start fully supplied
     }
 
-    // 🔹 Add / remove produced supply
-    public void AddSupply(int amount)
-    {
-        currentSupply += amount;
-        currentSupply = Mathf.Max(0, currentSupply);
-
-        OnResourceChanged?.Invoke(ResourceType.Supply, currentSupply);
-    }
-
-    // 🔹 Add / remove required supply (from houses etc.)
-    public void AddRequiredSupply(int amount)
-    {
-        requiredSupply += amount;
-        requiredSupply = Mathf.Max(0, requiredSupply);
-    }
 
     // Entry for turnmanager
     public void CalculateCurrentSupply(BuildingRegistry buildingRegistry, int populationCount)
@@ -59,6 +44,22 @@ public class SupplyService
 
         OnResourceChanged?.Invoke(ResourceType.Supply, currentSupply);
         Logger.Log($"Supply recalculated. Current supply: {currentSupply}, Required supply: {requiredSupply}, Supply ratio: {currentSupplyRatio:P1}");
+    }
+    
+    // 🔹 Add / remove produced supply
+    public void AddSupply(int amount)
+    {
+        currentSupply += amount;
+        currentSupply = Mathf.Max(0, currentSupply);
+
+        OnResourceChanged?.Invoke(ResourceType.Supply, currentSupply);
+    }
+
+    // 🔹 Add / remove required supply (from houses etc.)
+    public void AddRequiredSupply(int amount)
+    {
+        requiredSupply += amount;
+        requiredSupply = Mathf.Max(0, requiredSupply);
     }
 
     // 🔹 Supply ratio (core metric) - but not shown in UI

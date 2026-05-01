@@ -30,13 +30,16 @@ public class ObjectiveService
         GoldService goldService,
         ResourceService resourceService,
         GameServerController gameServerController,
-        DynamicDifficultyAdjuster difficultyAdjuster)
+        DynamicDifficultyAdjuster difficultyAdjuster,
+        PopulationService populationService
+         )
     {
         this.buildingRegistry = buildingRegistry;
         this.goldService = goldService;
         this.resourceService = resourceService;
         this.gameServerController = gameServerController;
         this.difficultyAdjuster = difficultyAdjuster;
+        this.populationService = populationService;
 
         objectiveTemplates = new Dictionary<ObjectiveType, ObjectiveDefinition>();
 
@@ -78,7 +81,7 @@ public class ObjectiveService
             return;
         }
 
-        // Create a runtime copy so you don't modify the asset directly
+        // Create a runtime copy to prevent modify the asset directly
         ObjectiveDefinition runtimeDefinition = ScriptableObject.Instantiate(template);
 
         int currentTurn = resourceService.CurrentTurnCount;
@@ -90,7 +93,7 @@ public class ObjectiveService
             : response.objective_type;
         runtimeDefinition.Description = string.IsNullOrWhiteSpace(response.reason)
             ? template.Description
-            : response.reason;
+            : response.objective_type;
 
         runtimeDefinition.targetValue =
             difficultyAdjuster.GetTargetValue(objectiveType, difficulty);
@@ -183,6 +186,11 @@ public class ObjectiveService
                 {
                     Logger.Log($"Rewarded: {activeObjective.objectiveDefinition.rewardGold} gold");
                     goldService.AddGold(activeObjective.objectiveDefinition.rewardGold);
+                }
+
+                if(resourceService.CurrentTurnCount == 21) // if it's the final turn, trigger end game sequence instead of claiming reward as normal
+                {
+                    populationService.AddPopulationBuff(1000); //reward for completing final objective, can change later
                 }
 
                 activeObjective.MarkRewardClaimed();

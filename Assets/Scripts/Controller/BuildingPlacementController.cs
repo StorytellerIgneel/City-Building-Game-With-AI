@@ -63,16 +63,6 @@ public class BuildingPlacementController : MonoBehaviour
         if (!IsBuildingMode) return;
         mousePosition = gridService.SnapToGrid(mousePosition);
 
-        // BuildingPlacementCommand command = new BuildingPlacementCommand(
-        //     placementService,
-        //     currentBuildingDef,
-        //     mousePosition,
-        //     buildingRegistry);
-
-        // commandInvoker.ExecuteCommand(command);
-
-        // BuildingData buildingData = command.GetBuildingData();
-
         BuildingData buildingData = buildingPlacementService.PlaceBuilding(currentBuildingDef, mousePosition);
 
         if (buildingData == null)
@@ -96,11 +86,6 @@ public class BuildingPlacementController : MonoBehaviour
                 buildingComponent.Initialize(currentBuildingDef, buildingData);
                 buildingData.BuildingObject = spawnBuilding;
             }
-            // else
-            // {
-            //     Logger.LogError("Failed to get Building component from prefab!");
-            //     return;
-            // }
         }   
         ExitBuildModeCleanup();
     }

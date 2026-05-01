@@ -70,7 +70,7 @@ public class InputManager : MonoBehaviour
 
     private void HandleCameraMove(InputAction.CallbackContext context)
     {
-        Vector2 input = context.ReadValue<Vector2>(); // Already combined WASD vector
+        Vector2 input = context.ReadValue<Vector2>(); //Vector combined for both performed and canceled (0,0) when released
         OnCameraMove?.Invoke(input);
     }
 

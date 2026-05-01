@@ -321,13 +321,13 @@ df_test["predicted_cluster"] = test_clusters
 print("-" * 50)
 print("Test runs prediction:")
 print(df_test[["session_id", "predicted_cluster"]])
-
+    
 # save model
-save_dir = r"C:\UnityProjects\FYP\GameWebAPI\app\ml\TrainedModels\Clustering"
-os.makedirs(save_dir, exist_ok=True)
+# save_dir = r"C:\UnityProjects\FYP\GameWebAPI\app\ml\TrainedModels\Clustering"
+# os.makedirs(save_dir, exist_ok=True)
 
-joblib.dump(kmeans, os.path.join(save_dir, "kmeans_model.pkl"))
-joblib.dump(scaler, os.path.join(save_dir, "scaler.pkl"))
-joblib.dump(feature_cols, os.path.join(save_dir, "feature_cols.pkl"))
+# joblib.dump(kmeans, os.path.join(save_dir, "kmeans_model.pkl"))
+# joblib.dump(scaler, os.path.join(save_dir, "scaler.pkl"))
+# joblib.dump(feature_cols, os.path.join(save_dir, "feature_cols.pkl"))
 
 print("Model, scaler, and feature list saved.")

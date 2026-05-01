@@ -319,11 +319,3 @@ class SessionWebSocketService:
             "type": "error",
             "message": message
         })
-    
-    def determine_use_case(turn: int) -> str:
-        if turn == 15:
-            return "turn_reaction_advice_objective"
-        elif turn % 3 == 0:
-            return "turn_reaction_advice"
-        else:
-            return "turn_reaction"
