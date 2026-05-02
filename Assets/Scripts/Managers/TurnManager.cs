@@ -106,7 +106,7 @@ public class TurnManager : MonoBehaviour
         {
             gameServerController.GenerateObjective();
         }
-        if (turnService.CurrentTurnCount == 2)
+        if (turnService.CurrentTurnCount == 21)
         {
             EndGame();
         }
